@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Section2 from './components/Section2';
+import Section3 from './components/Section3'
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -23,7 +24,7 @@ export default function page() {
   // ──────────────────────────────────────────────────────────────
   //
   return <>
-  
   <Section2 />
+  <Section3 />
   </>;
 }
