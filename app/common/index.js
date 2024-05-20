@@ -21,8 +21,6 @@ export {
   Button,
   RangePicker,
   Modal,
-  CarLicensePlate,
-  CycleLicensePlate,
   ConfirmModal,
   QuestionModal,
   DeleteModal,
