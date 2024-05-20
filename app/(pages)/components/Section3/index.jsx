@@ -23,7 +23,7 @@ export default function Index() {
   //
   return (
     <>
-      <section className="  mt-[120px] grid w-full text-[#0C0C0C]">
+      <section className="  mt-[120px] grid w-full text-[#0C0C0C] relative">
         <header className="relative mx-auto flex gap-4 justify-self-center">
           <Image
             src="/images/icons/Frame 1261154674.svg"
@@ -55,7 +55,7 @@ export default function Index() {
 نتایج بیشتر را فراهم می‌کند."
           />
         </section>
-          <Image src='/images/Arrow-Filled-Head.png' width={84} height={84} alt="" className="absolute right-[246px] bottom-[-280px]"/>
+          <Image src='/images/Arrow-Filled-Head.png' width={84} height={84} alt="" className="absolute right-[246px] bottom-[280px]"/>
         <section className="mx-auto mt-[101px] flex w-full justify-evenly">
           <Card
             title={"تو وقتت هم صرفه جویی میشه"}
