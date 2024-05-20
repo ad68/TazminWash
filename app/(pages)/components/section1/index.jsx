@@ -25,18 +25,20 @@ export default function Index() {
     <>
     <section className="w-full h-[744px]">
       <section className="flex w-[1296px]  mx-auto items-center h-[488px] justify-between ">
-        <section className="absolute left-0   top-[-100px] -z-10 mt-[40px] flex  h-[1000px] w-[1000px]  justify-center bg-[radial-gradient(circle,#ccabda,#cca9d9,1%,#d7bfe2,#f3f0f6,white,white,white)]">
+        <section className="absolute left-0   top-[-100px] -z-10 mt-[40px] flex  h-[1000px] w-[1000px]  justify-center bg-[radial-gradient(#ccabda,#cca9d9,1%,#d7bfe2,#f3f0f6,white,white,white)]">
           <Image
             width={641}
             height={423}
             src="/images/bg-car.png"
             className="absolute bottom-[330px] -z-0 "
+            alt=""
           />
           <Image
             width={718}
             height={230.29}
             src="/images/circ-bg.png"
             className="absolute bottom-[300px] -z-10"
+            alt=""
           />
         </section>
        
@@ -47,7 +49,7 @@ export default function Index() {
           <span className="text-[24px] mt-4 leading-[41.45px] font-medium text-[#434343]">کارواش ما، به شما در محل خودتان خدمت رسانی می‌کند.</span>
           <section className="flex h-[56px] mt-[40px] w-[178px] items-center justify-center gap-[10px] rounded-lg border border-solid border-[#700B97] font-medium text-[#700B97]">
           اطلاعات بیشتر
-            <Image width={4} height={8} src="/images/icons/arrow-left.svg" />
+            <Image alt="" width={4} height={8} src="/images/icons/arrow-left.svg" />
           </section>
         </section>
       
