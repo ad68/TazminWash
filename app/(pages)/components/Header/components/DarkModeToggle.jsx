@@ -34,9 +34,9 @@ export default function Index({ theme, setTheme, goToLightMode, goToDarkMode }) 
     //
     return (
         <section onClick={() => { status === true ? goToLightMode() : goToDarkMode() }} className='w-[64px] cursor-pointer h-[31px] relative border border-[#700B97] rounded-[19px]'>
-            <Image src={Son} alt='' className={`absolute top-[5px] right-2 transition-all ease-in-out ${status ? `left-[-3px]` : `left-[27px]`}`} />
+            <Image src={Son} alt='' className={`absolute top-[5px] right-2 transition-all ease-in-out left-[27px]`} />
             <Image src={DarkModeCircle} alt='' className={`absolute top-[-4px] transition-all duration-300 ${status ? `left-[-3px]` : `left-[27px]`}`} />
-            <Image src={Moon} alt='' className={`absolute top-[5px] left-2 transition-all ${status ? `left-[-3px]` : `left-[27px]`}`} />
+            <Image src={Moon} alt='' className={`absolute top-[5px] left-2 transition-all`} />
         </section>
     )
 }
