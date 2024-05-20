@@ -1,18 +1,12 @@
 "use client";
 import React from "react";
-import Section1 from "./components/section1";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
-import Section7 from "./components/Section7";
-//
+
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function page() {
+export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -20,20 +14,16 @@ export default function page() {
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
-  //
 
+  //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-  return (
-    <>
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-    </>
-  );
+  return <>
+  <section className="hover:border-[1px] hover:border-[#700B97] rounded-full w-[14px] h-[16px] flex justify-center items-center transition-all ">
+    
+  <div className="w-[4px] h-[4px] rounded-full inline-block bg-black hover:bg-[#700B97]  "></div>
+  </section>
+  </>;
 }
