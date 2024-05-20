@@ -52,3 +52,9 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.number {
+  background: linear-gradient(to bottom, #6f0b97af, #E39BFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
