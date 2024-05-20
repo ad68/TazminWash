@@ -30,6 +30,7 @@ export default function Index() {
             height={16}
             src="/images/icons/car.svg"
             className="ml-4"
+            alt=""
            
           />
           ماشین
@@ -38,6 +39,7 @@ export default function Index() {
             height={7.5}
             src="/images/icons/arrow-down.svg"
             className="mr-[45.84px]"
+            alt=""
           />
 </section>
 <section className="w-[199.64px] py-[10px]  justify-center rounded-[10px] border border-solid  border-[#EBEBEB] mr-8 h-[55px] flex jus items-center">
@@ -46,7 +48,7 @@ export default function Index() {
             height={24}
             src="/images/icons/calender.svg"
             className="ml-4"
-           
+           alt=""
           />
           تاریخ
            <Image
@@ -54,6 +56,7 @@ export default function Index() {
             height={7.5}
             src="/images/icons/arrow-down.svg"
             className="mr-[64px]"
+            alt=""
           />
 </section>
 <section className="w-[199.64px] py-[10px]  justify-center rounded-[10px] border border-solid  border-[#EBEBEB] mr-8 h-[55px] flex jus items-center">
@@ -62,7 +65,7 @@ export default function Index() {
             height={24}
             src="/images/icons/Widget.svg"
             className="ml-4"
-           
+           alt=""
           />
           خدمات
            <Image
@@ -70,12 +73,14 @@ export default function Index() {
             height={7.5}
             src="/images/icons/arrow-down.svg"
             className="mr-[49px]"
+            alt=""
           />
 </section>
 <button className="w-[199.64px] py-[10px]  text-white bg-gradient-to-r from-[#CE50FF] -12.01% to-[#700B97] 108.61%   justify-center rounded-[10px] border border-solid  border-[#EBEBEB] mr-8 h-[55px] flex jus items-center">
            <Image
             width={24}
             height={24}
+            alt=""
             src="/images/icons/Search.svg"
             className="ml-2"
           />

@@ -1,13 +1,12 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import SearchBox from "./components/SearchBox";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({title, text,img,price}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -21,41 +20,21 @@ export default function Index() {
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-  return (
-    <>
-    <section className="w-full h-[744px]">
-      <section className="flex w-[1296px]  mx-auto items-center h-[488px] justify-between ">
-        <section className="absolute left-0   top-[-100px] -z-10 mt-[40px] flex  h-[1000px] w-[1000px]  justify-center bg-[radial-gradient(#ccabda,#cca9d9,1%,#d7bfe2,#f3f0f6,white,white,white)]">
-          <Image
-            width={641}
-            height={423}
-            src="/images/bg-car.png"
-            className="absolute bottom-[330px] -z-0 "
-            alt=""
-          />
-          <Image
-            width={718}
-            height={230.29}
-            src="/images/circ-bg.png"
-            className="absolute bottom-[300px] -z-10"
-            alt=""
-          />
-        </section>
-       
-        <section className="h-[291px] w-[564px] text-[#0C0C0C]">
-          <h2 className="text-[40px] ml-[99px] text-right font-bold leading-[69.09px]">
-            تمیزی خودروی شما،<br/> تنها با <span className="font-extrabold text-[#700B97]">یک کلیک</span> فاصله دارد!
-          </h2>
-          <span className="text-[24px] mt-4 leading-[41.45px] font-medium text-[#434343]">کارواش ما، به شما در محل خودتان خدمت رسانی می‌کند.</span>
-          <section className="flex h-[56px] mt-[40px] w-[178px] items-center justify-center gap-[10px] rounded-lg border border-solid border-[#700B97] font-medium text-[#700B97]">
-          اطلاعات بیشتر
-            <Image alt="" width={4} height={8} src="/images/icons/arrow-left.svg" />
-          </section>
-        </section>
-      
-      </section>
-      <SearchBox />
-      </section>
-    </>
-  );
+  return <>
+  <section className=" flex  py-4 flex-col h-full w-[306px]  rounded-2xl bg-white p-6 shadow-2xl">
+  <Image src={img} width={274} height={170} alt=""/>
+            <span className="text-[16px] mt-4 font-medium leading-[28.44px]">
+                {title}
+            </span>
+            <p className="text-justify text-[12px] mt-[24px] leading-[24px]">
+              {text}
+            </p>
+            <section className="flex justify-between mt-8 w-full items-center">
+              <span className="text-sm font-medium ">{price}</span>
+            <button className="flex items-center px-2 py-[8px] border-[1px] border-[##0C0C0C] w-[96px] rounded-lg h-[40px] 	">
+                <span className="text-[14px] leading-[24.18px] font-medium text-[#0C0C0C]">مشاهده</span>
+                <Image src='/images/icons/Alt-Arrow-Left.png' width={24} height={24} alt=""/>
+            </button>
+            </section>
+          </section></>;
 }
