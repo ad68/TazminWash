@@ -46,3 +46,9 @@ html {
   background: #555;
   border-radius: 40px;
 }
+
+.color {
+  background: linear-gradient(to left, #700B97, #DF8BFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
