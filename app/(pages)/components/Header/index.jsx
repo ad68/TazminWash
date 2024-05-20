@@ -5,7 +5,7 @@ export const Header = () => {
     <>
       <section className="mx-auto mt-10 flex h-[41px] w-[1295px] justify-between font-medium text-[#0C0C0C]">
         <section className="flex w-[598px] items-center justify-between">
-          <Image width={99} height={41} src="/images/icons/logo.svg" />
+          <Image alt="" width={99} height={41} src="/images/icons/logo.svg" />
           <span>صفحه اصلی</span>
           <span>درباره ما</span>
           <span>محصولات</span>

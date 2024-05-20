@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
 import Section1 from "./components/section1";
-
-
 import Section2 from './components/Section2';
 import Section3 from './components/Section3';
 import Section4 from './components/Section4';
 import Section6 from './components/Section6';
+
+
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -34,4 +34,5 @@ export default function page() {
   <Section4 />
   <Section6 />
   </>;
+
 }
