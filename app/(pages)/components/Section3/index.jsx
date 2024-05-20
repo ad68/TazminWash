@@ -42,7 +42,7 @@ export default function Index() {
         </header>
         <section className="mx-auto mt-[101px] flex w-full justify-evenly">
           <Image
-            src={"/images/Carwash45 1.png"}
+            src={"/images/Carwash451.png"}
             width={632}
             height={255}
             alt=""
@@ -51,17 +51,17 @@ export default function Index() {
           <Card
             title={"در مصرف آب صرفه جویی میشه"}
             text="استفاده از تکنولوژی نانو در کارواش می‌تواند باعث کاهش بیشتر در مصرف آب 
-شود، زیرا این تکنولوژی قابلیت استفاده از کمترین مقدار آب برای کارایی بهتر و 
-نتایج بیشتر را فراهم می‌کند."
+            شود، زیرا این تکنولوژی قابلیت استفاده از کمترین مقدار آب برای کارایی بهتر و 
+            نتایج بیشتر را فراهم می‌کند."
           />
         </section>
-          <Image src='/images/Arrow-Filled-Head.png' width={84} height={84} alt="" className="absolute right-[246px] bottom-[280px]"/>
+        <Image src='/images/Arrow-Filled-Head.png' width={84} height={84} alt="" className="absolute right-[246px] bottom-[280px]" />
         <section className="mx-auto mt-[101px] flex w-full justify-evenly">
           <Card
             title={"تو وقتت هم صرفه جویی میشه"}
             text="با این روش، شما نیازی به رفت و آمد به کارواش ندارید و می‌توانید وقت خود را 
-برای امور مهمتری اختصاص دهید. همچنین، با انجام این کار در محل، می‌توانید 
-هزینه‌های مربوط به سفر و وقت اضافی را کاهش دهید."
+            برای امور مهمتری اختصاص دهید. همچنین، با انجام این کار در محل، می‌توانید 
+            هزینه‌های مربوط به سفر و وقت اضافی را کاهش دهید."
           />
           <Image
             src={"/images/31684655165 1.png"}
