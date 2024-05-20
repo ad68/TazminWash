@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-
+import Image from "next/image";
+import Steps from "./components/Steps";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
@@ -22,13 +23,32 @@ export default function Index() {
   //
   return (
     <>
-      <section className="flex justify-center mt-[120px]">
-        <section className="h-[248px] w-[1296px] bg-[url('/images/Group8.png')] bg-[length:1296px_284px] bg-no-repeat rounded-[15px] grid text-white pr-14 py-8">
-          <h1 className="text-[48px] font-extrabold">چند قدم تا کسب درآمد</h1>
-          <h2 className="text-[24px] font-bold">با ثبت نام در تضمین واش برای خودت درآمد کسب کن</h2>
-          <button className="bg-white w-[117px] h-[48px] rounded-[10px] mt-4">
-            <span className="text-[18px] font-semibold  text-[#700B97]">ثبت‌ نام</span>
-          </button>
+      <section className="relative mt-[120px]">
+        <Image
+          src="/images/Group7.png"
+          width={1489}
+          height={157}
+          alt=""
+          className="my-[333px] w-full"
+        />
+        <section className="absolute right-[350px] top-[-260px] grid w-[239px] justify-items-center">
+          <h1 className="number text-[96px] font-extrabold ">01</h1>
+          <h2 className="text-[32px] font-black">
+            ثبت <span className="text-[#700B97]">سفارش</span> کن منتظر تایید باش
+          </h2>
+        </section>
+        <section className="absolute right-[45%] top-[260px] grid w-[239px] justify-items-center">
+          <h1 className="number text-[96px] font-extrabold ">02</h1>
+          <h2 className="text-center text-[32px] font-black">
+            <span className="text-[#700B97]">کارواش</span> داره میاد سمتت
+          </h2>
+        </section>
+        <section className="absolute left-[325px] top-[-300px] grid w-[239px] justify-items-center">
+          <h1 className="number text-[96px] font-extrabold ">03</h1>
+          <h2 className="text-center text-[32px] font-black">
+            شست‌وشو <span className="text-[#700B97]">تموم</span> ‌شد ماشین ‌شما
+            ‌آمادست
+          </h2>
         </section>
       </section>
     </>
