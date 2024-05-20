@@ -42,7 +42,7 @@ export default function Index() {
         </header>
         <section className="mx-auto mt-[101px] flex w-full justify-evenly">
           <Image
-            src={"/images/Carwash45 1.png"}
+            src={"/images/Carwash451.png"}
             width={632}
             height={255}
             alt=""
@@ -55,7 +55,7 @@ export default function Index() {
 نتایج بیشتر را فراهم می‌کند."
           />
         </section>
-          <Image src='/images/Arrow-Filled-Head.png' width={84} height={84} alt="" className="absolute right-[246px] bottom-[-280px]"/>
+        <Image src='/images/Arrow-Filled-Head.png' width={84} height={84} alt="" className="absolute right-[246px] bottom-[-280px]" />
         <section className="mx-auto mt-[101px] flex w-full justify-evenly">
           <Card
             title={"تو وقتت هم صرفه جویی میشه"}
