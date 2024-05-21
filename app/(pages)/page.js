@@ -28,7 +28,7 @@ export default function page() {
   //
   return (
     <>
-      <Section1 />
+    {/*   <Section1 /> */}
       <Section2 />
       <Section3 />
       <Section5 />

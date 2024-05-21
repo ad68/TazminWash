@@ -23,7 +23,7 @@ export default function Index() {
   return <>
   <section className="hover:border-[1px] hover:border-[#700B97] rounded-full w-[14px] h-[16px] flex justify-center items-center transition-all ">
     
-  <div className="w-[4px] h-[4px] rounded-full inline-block bg-black hover:bg-[#700B97]  "></div>
+  <div className="w-[4px] h-[4px] rounded-full inline-block bg-black hover:bg-[#700B97]  dark:bg-white"></div>
   </section>
   </>;
 }

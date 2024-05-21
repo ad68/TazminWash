@@ -31,13 +31,13 @@ export default function Index() {
             height={423}
             src="/images/bg-car.png"
             className="absolute bottom-[330px] -z-0 "
-          />
+          alt=""/>
           <Image
             width={718}
             height={230.29}
             src="/images/circ-bg.png"
             className="absolute bottom-[300px] -z-10"
-          />
+          alt=""/>
         </section>
        
         <section className="h-[291px] w-[564px] text-[#0C0C0C]">
@@ -47,7 +47,7 @@ export default function Index() {
           <span className="text-[24px] mt-4 leading-[41.45px] font-medium text-[#434343]">کارواش ما، به شما در محل خودتان خدمت رسانی می‌کند.</span>
           <section className="flex h-[56px] mt-[40px] w-[178px] items-center justify-center gap-[10px] rounded-lg border border-solid border-[#700B97] font-medium text-[#700B97]">
           اطلاعات بیشتر
-            <Image width={4} height={8} src="/images/icons/arrow-left.svg" />
+            <Image width={4} height={8} src="/images/icons/arrow-left.svg" alt="" />
           </section>
         </section>
       
