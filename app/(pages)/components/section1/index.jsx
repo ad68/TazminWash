@@ -24,31 +24,45 @@ export default function Index() {
   //
   return (
     <>
-    <section className="w-full dark:bg-black pt-[41px] relative h-[744px]">
-      <section className="flex w-[1296px] dark:bg-black  mx-auto items-center h-[488px] justify-between ">
-     
-       
-        <section className="h-[291px] w-[564px] dark:text-white text-[#0C0C0C]">
-          <h2 className="text-[40px] ml-[99px] text-right font-bold leading-[69.09px]">
-            تمیزی خودروی شما،<br/> تنها با <span className="font-extrabold text-[#700B97]">یک کلیک</span> فاصله دارد!
-          </h2>
-          <span className="text-[24px] mt-4 leading-[41.45px] font-medium dark:text-white text-[#434343]">کارواش ما، به شما در محل خودتان خدمت رسانی می‌کند.</span>
-          <section className="flex h-[56px] mt-[40px] dark:border-white dark:text-white w-[178px] items-center justify-center gap-[10px] rounded-lg border border-solid border-[#700B97] font-medium text-[#700B97]">
-          اطلاعات بیشتر
-          <IconArrowLeft width='8' hight='13' color='#700B97' viewBox="0 0 6 10" className='dark:hidden block'/>
-          <IconArrowLeft width='8' hight='13' color='white' viewBox="0 0 6 10" className='hidden dark:block'/>
+      <section className="relative h-auto xl:h-[744px] w-full pt-[41px] dark:bg-black">
+        <section className="mx-auto flex h-auto xl:h-[488px] w-[90%] flex-col items-center  justify-between xl:w-[1296px] xl:flex-row dark:bg-black ">
+          <section className="mt-[213px] flex flex-col xl:items-start items-center h-auto w-full text-[#0C0C0C] xl:h-[291px] xl:w-[564px] dark:text-white">
+            <h2 className="text-right text-base font-bold leading-[27.64px] xl:ml-[99px] xl:text-[40px] xl:leading-[69.09px]">
+              تمیزی خودروی شما، تنها با{" "}
+              <span className="font-extrabold text-[#700B97]">یک کلیک</span>{" "}
+              فاصله دارد!
+            </h2>
+            <span className="mt-4 text-sm font-medium leading-[27.64px] xl:leading-[41.45px] text-[#434343] xl:text-[24px] dark:text-white">
+              کارواش ما، به شما در محل خودتان خدمت رسانی می‌کند.
+            </span>
+            <section className="mt-2 text-xs  xl:text-base flex h-auto py-[6px] xl:h-[56px] w-[106px] xl:w-[178px] items-center justify-center gap-[10px] rounded-lg border border-solid border-[#700B97] font-medium text-[#700B97] xl:mt-[40px] dark:border-white dark:text-white">
+              اطلاعات بیشتر
+              <IconArrowLeft
+                width="8"
+                hight="13"
+                color="#700B97"
+                viewBox="0 0 6 10"
+                className="hidden xl:block dark:hidden "
+              />
+              <IconArrowLeft
+                width="8"
+                hight="13"
+                color="white"
+                viewBox="0 0 6 10"
+                className="hidden xl:dark:block"
+              />
+            </section>
           </section>
-        </section>
-        <Image
-            width={1000}
+          <Image
+            width={900}
             height={498}
             src="/images/hero.png"
-            className="absolute left-[5%] top-[-50px] "
+            className="absolute left-[5%] top-[10px] xl:top-[-30px] "
             alt=""
           />
-      </section>
-    
-      <SearchBox />
+        </section>
+
+        <SearchBox />
       </section>
     </>
   );

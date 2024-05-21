@@ -52,7 +52,17 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@layer base {.bg-searchBox-gradient{
+@layer base {.bg-slider-gradient{
   background: linear-gradient(126.6deg, rgba(255, 255, 255, 0.12) 28.69%, rgba(255, 255, 255, 0) 100%);
 
-}}
+}
+
+
+
+}
+@layer base{
+  .bg-searchBox-gradient{
+    background: linear-gradient(216.6deg, rgba(111, 11, 151, 0.212) 20.69%, rgba(255, 255, 255, 0.070) 100%)
+  
+  }
+}

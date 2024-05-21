@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import { IconAltArrow, IconArrowLeft } from "@/common/icons";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({title, text,img,price}) {
+export default function Index({ title, text, img, price,display }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -20,21 +21,45 @@ export default function Index({title, text,img,price}) {
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-  return <>
-  <section className=" flex  py-4 flex-col h-full w-[306px]  rounded-2xl bg-white p-6 shadow-2xl">
-  <Image src={img} width={274} height={170} alt=""/>
-            <span className="text-[16px] mt-4 font-medium leading-[28.44px]">
-                {title}
+  return (
+    <>
+      <section className={`${display} dark:bg-slider-gradient  flex h-auto w-full xl:w-[306px] flex-col rounded-2xl  border-[1px] border-solid border-[#ffffff1a]  bg-white p-[10px] xl:p-4 text-[#0C0C0C] shadow-2xl dark:text-white`}>
+        <Image src={img} width={274} height={170} alt="" />
+        <span className="mt-2 xl:mt-4 text-xs xl:text-[16px] font-medium leading-[28.44px]">
+          {title}
+        </span>
+        <p className="xl:mt-[16px] xl:text-justify text-[10px] xl:text-[12px] leading-[24px]">
+          {text}
+        </p>
+        <section className="xl:mt-8 mt-4 flex xl:flex-row flex-col w-full xl:items-center justify-between">
+          <span className="text-sm font-medium ">{price}</span>
+          <button className="flex xl:h-[40px] mt-[13px] xl:mt-0 xl:w-[96px] w-full items-center rounded-lg border-[0.5px] xl:border-[1px] border-[#700B97] dark:border-[#CFCFCF]  xl:dark:border-[#CFCFCF] xl:border-[#0C0C0C] justify-center   	">
+            <span className="text-[14px] font-medium leading-[24.18px] text-[#700B97] xl:text-[#0C0C0C] dark:text-white">
+              مشاهده
             </span>
-            <p className="text-justify text-[12px] mt-[24px] leading-[24px]">
-              {text}
-            </p>
-            <section className="flex justify-between mt-8 w-full items-center">
-              <span className="text-sm font-medium ">{price}</span>
-            <button className="flex items-center px-2 py-[8px] border-[1px] border-[##0C0C0C] w-[96px] rounded-lg h-[40px] 	">
-                <span className="text-[14px] leading-[24.18px] font-medium text-[#0C0C0C]">مشاهده</span>
-                <Image src='/images/icons/Alt-Arrow-Left.png' width={24} height={24} alt=""/>
-            </button>
-            </section>
-          </section></>;
+
+            <IconAltArrow
+              color="white"
+              fill='white'
+              viewBox="0 0 24 25"
+              className=" hidden dark:block"
+            />
+            
+            <IconAltArrow
+              color="#700B97"
+              fill='#700B97'
+              viewBox="0 0 24 25"
+              className="dark:hidden xl:hidden xl:dark:hidden block"
+            />
+            <IconAltArrow
+              color="black"
+              fill='black'
+              viewBox="0 0 24 25"
+              className="hidden xl:block dark:hidden"
+            />
+          </button>
+        </section>
+      </section>
+    </>
+  );
 }
