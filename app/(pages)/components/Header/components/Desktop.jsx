@@ -1,8 +1,9 @@
+
 "use client";
 import React from "react";
 import Image from "next/image";
-import SearchBox from "./components/SearchBox";
-import { IconArrowLeft, IconArrowRight } from "@/common/icons";
+import DarkMode from "./DarkMode";
+import { IconPerson } from "@/common/icons";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
@@ -22,48 +23,52 @@ export default function Index() {
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-  return (
-    <>
-      <section className="relative h-auto xl:h-[744px] w-full pt-[41px] dark:bg-black">
-        <section className="mx-auto flex h-auto xl:h-[488px] w-[90%] flex-col items-center  justify-between xl:w-[1296px] xl:flex-row dark:bg-black ">
-          <section className="mt-[213px] flex flex-col xl:items-start items-center h-auto w-full text-[#0C0C0C] xl:h-[291px] xl:w-[564px] dark:text-white">
-            <h2 className="text-right text-base font-bold leading-[27.64px] xl:ml-[99px] xl:text-[40px] xl:leading-[69.09px]">
-              تمیزی خودروی شما، تنها با{" "}
-              <span className="font-extrabold text-[#700B97]">یک کلیک</span>{" "}
-              فاصله دارد!
-            </h2>
-            <span className="mt-4 text-sm font-medium leading-[27.64px] xl:leading-[41.45px] text-[#434343] xl:text-[24px] dark:text-white">
-              کارواش ما، به شما در محل خودتان خدمت رسانی می‌کند.
-            </span>
-            <section className="mt-2 text-xs  xl:text-base flex h-auto py-[6px] xl:h-[56px] w-[106px] xl:w-[178px] items-center justify-center gap-[10px] rounded-lg border border-solid border-[#700B97] font-medium text-[#700B97] xl:mt-[40px] dark:border-white dark:text-white">
-              اطلاعات بیشتر
-              <IconArrowLeft
-                width="8"
-                hight="13"
-                color="#700B97"
-                viewBox="0 0 6 10"
-                className="hidden xl:block dark:hidden "
-              />
-              <IconArrowLeft
-                width="8"
-                hight="13"
+  return <>
+  <section className="fixed left-0 top-0 z-10  hidden w-full xl:block">
+        <section className="mx-auto mt-10 flex h-[41px] w-[1295px] justify-between font-medium text-[#0C0C0C] dark:text-white ">
+          <section className="flex w-[598px] items-center justify-between">
+            <Image
+              alt=""
+              width={99}
+              height={41}
+              src="/images/icons/logo.svg"
+              className="dark:hidden"
+            />
+            <Image
+              alt=""
+              width={99}
+              height={41}
+              src="/images/icons/logo-Dark.svg"
+              className="hidden dark:block"
+            />
+            <span>صفحه اصلی</span>
+            <span>درباره ما</span>
+            <span>محصولات</span>
+            <span>لیست قیمت ها</span>
+            <span>وبلاگ</span>
+          </section>
+          <section className="flex w-[235px] items-center justify-between">
+            <DarkMode />
+            {/* <Image width={64} height={32} src="/images/icons/darkModeBtn.png" /> */}
+            <section className="flex h-full w-[155px] items-center justify-center gap-[12.25px] rounded-lg border border-solid border-[#700B97] font-medium text-[#700B97] dark:border-white dark:text-white">
+              <IconPerson
+                width="15.5"
+                height="20.5"
+                viewBox="0 0 16 22"
                 color="white"
-                viewBox="0 0 6 10"
-                className="hidden xl:dark:block"
+                className="hidden dark:block"
               />
+              <IconPerson
+                width="15.5"
+                height="20.5"
+                viewBox="0 0 16 22"
+                color="#700B97"
+                className="block dark:hidden"
+              />
+              حساب کاربری
             </section>
           </section>
-          <Image
-            width={900}
-            height={498}
-            src="/images/hero.png"
-            className="absolute left-[5%] top-[15px] xl:top-[-30px] "
-            alt=""
-          />
         </section>
-
-        <SearchBox />
       </section>
-    </>
-  );
+  </>;
 }

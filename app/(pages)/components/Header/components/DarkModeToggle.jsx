@@ -1,8 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react'
-import DarkModeCircle from '../../../../../public/images/icons/DarkModeCircle.svg'
-import Son from '../../../../../public/images/icons/Son.svg'
-import Moon from '../../../../../public/images/icons/moon.svg'
-import Image from 'next/image'
+// import DarkModeCircle from '../../../../../public/images/icons/DarkModeCircle.svg'
+// import Son from '../../../../../public/images/icons/Son.svg'
+// import Moon from '../../../../../public/images/icons/moon.svg'
+// import Image from 'next/image'
 import { consoleLog_BlackOrange } from '@/helper'
 import { IconDarkModeCircle, IconMoon, IconSon } from '@/common/icons'
 //

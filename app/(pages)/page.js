@@ -29,10 +29,10 @@ export default function page() {
   //
   return <>
   <Section1 />
-  <Section2 />
-  <Section3 />
+  {/* <Section2 />
+  <Section3 /> */}
   <Section4 />
-  <Section6 />
+  {/* <Section6 /> */}
   </>;
 
 }
