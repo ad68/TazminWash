@@ -23,8 +23,8 @@ export default function Index() {
   //
   return (
     <>
-      <section className="my-[120px] relative w-[90%] mx-auto dark:text-white">
-        <header className="flex items-center justify-center gap-[22px]">
+      <section className="xl:mt-[120px] mt-[40px] relative w-[90%] mx-auto ">
+        <header className="flex items-center justify-center gap-[22px] dark:text-white">
           <section className="flex h-4 w-4 items-center justify-center rounded-full border-[1px] border-[#6f0b9759] dark:border-[#ffffff7a]">
             <section className="flex h-3 w-3 items-center justify-center rounded-full border-[1px] border-[#6f0b97ac] dark:border-[#ffffffbf]">
               <div className="inline-block h-2 w-2 rounded-full bg-[#700B97]  dark:bg-white"></div>
@@ -37,7 +37,7 @@ export default function Index() {
             </section>
           </section>
         </header>
-        <section className="mt-6 absolute bg-white z-10 grid h-[278px] rounded-[15px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[580px] w-full justify-items-center gap-4 xl:bg-[url('/images/BG.png')] bg-cover py-6 xl:py-[80px] xl:dark:bg-[url('/images/BGD.png')]">
+        <section className="mt-6 absolute bg-white dark:xl:bg-black dark:xl:text-white z-10 grid h-[278px] rounded-[15px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[580px] w-full justify-items-center gap-4 xl:bg-[url('/images/BG.png')] bg-cover py-6 xl:py-[80px] xl:dark:bg-[url('/images/BGD.png')]">
           <Image
             src="/images/icons/Vector.svg"
             width={18}

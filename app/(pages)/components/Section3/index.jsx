@@ -23,7 +23,7 @@ export default function Index() {
   //
   return (
     <>
-      <section className="relative grid w-full gap-[40px] mt-[40px] text-[#0C0C0C] xl:mt-[120px]">
+      <section className="relative grid w-full  mt-[40px] text-[#0C0C0C] xl:mt-[120px]">
         <header className="relative mx-auto flex items-center gap-4 justify-self-center">
           {/* <Image
             src="/images/icons/Frame 1261154674.svg"
@@ -54,13 +54,13 @@ export default function Index() {
             className=" absolute right-[-46px] top-[126px]  block h-[45px] w-[20px] xl:hidden"
           />
         </header>
-        <section className="mx-auto  grid w-full justify-items-center gap-[40px] xl:mt-[101px] xl:flex xl:justify-evenly">
+        <section className="mx-auto mt-[32px] grid w-full justify-items-center gap-[40px] xl:mt-[101px] xl:flex xl:justify-evenly">
           <Image
             src={"/images/Carwash451.png"}
-            width={632}
+            width={636}
             height={255}
             alt=""
-            className="h-[81px] w-[192px] xl:mr-[34px] xl:h-[255px] xl:w-[632px]"
+            className="h-[81px] w-[192px] xl:mr-[34px] xl:h-[255px] xl:w-[636px]"
           />
           <Card
             title={"در مصرف آب صرفه جویی میشه"}
@@ -70,11 +70,11 @@ export default function Index() {
           />
         </section>
         <Image
-          src="/images/Arrow-Filled-Head.png"
+          src="/images/Arrow.png"
           width={84}
           height={84}
           alt=""
-          className="absolute hidden h-[45px] w-[20px] xl:bottom-[280px] xl:right-[246px] xl:block xl:size-[84px]"
+          className="absolute hidden  xl:bottom-[342px] xl:right-[50%] xl:block xl:size-[84px]"
         />
         <Image
           src="/images/Vector2.png"
@@ -83,7 +83,7 @@ export default function Index() {
           alt=""
           className="absolute  bottom-[290px] left-[67px] h-[45px] w-[20px] xl:hidden"
         />
-        <section className="mx-auto  grid w-full justify-items-center gap-[40px] xl:mt-[101px] xl:flex xl:justify-evenly">
+        <section className="mx-auto mt-[40px]  grid w-full justify-items-center gap-[40px] xl:mt-[101px] xl:flex xl:justify-evenly">
           <Card
             title={"تو وقتت هم صرفه جویی میشه"}
             text="با این روش، شما نیازی به رفت و آمد به کارواش ندارید و می‌توانید وقت خود را 
@@ -92,10 +92,10 @@ export default function Index() {
           />
           <Image
             src={"/images/31684655165 1.png"}
-            width={397.32}
-            height={285.09}
+            width={464}
+            height={290}
             alt=""
-            className=" order-first h-[123px] w-[172px] xl:h-[255px] xl:w-[632px]"
+            className=" order-first xl:order-last h-[123px] w-[172px] xl:h-[290px] xl:w-[464px]"
           />
         </section>
       </section>
