@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .glass {
   background: rgba(27, 27, 27, 0.2);
 
