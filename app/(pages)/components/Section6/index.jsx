@@ -63,7 +63,7 @@ export default function Index() {
               width={875.9}
               height={795.95}
               alt=""
-              className="absolute hidden xl:bottom-[0px] xl:right-[164px]  dark:block xl:block"
+              className="absolute hidden xl:bottom-[0px] xl:right-[164px]  dark:xl:block xl:block"
             />
             <Image
               src={"/images/line-l-l.png"}
@@ -77,7 +77,7 @@ export default function Index() {
               width={70}
               height={284}
               alt=""
-              className="absolute hidden xl:left-0 dark:block"
+              className="absolute hidden xl:left-0 dark:xl:block"
             />
           </section>
         </section>

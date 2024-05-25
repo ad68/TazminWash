@@ -23,7 +23,7 @@ export default function Index() {
   //
   return (
     <>
-      <section className="xl:mt-[120px] mt-[40px] relative w-[90%] mx-auto ">
+      <section className="xl:mt-[120px] mt-[40px]  w-[90%] xl:w-full xl:h-[580px] ">
         <header className="flex items-center justify-center gap-[22px] dark:text-white">
           <section className="flex h-4 w-4 items-center justify-center rounded-full border-[1px] border-[#6f0b9759] dark:border-[#ffffff7a]">
             <section className="flex h-3 w-3 items-center justify-center rounded-full border-[1px] border-[#6f0b97ac] dark:border-[#ffffffbf]">
@@ -37,7 +37,7 @@ export default function Index() {
             </section>
           </section>
         </header>
-        <section className="mt-6 absolute bg-white dark:xl:bg-black dark:xl:text-white z-10 grid h-[278px] rounded-[15px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[580px] w-full justify-items-center gap-4 xl:bg-[url('/images/BG.png')] bg-cover py-6 xl:py-[80px] xl:dark:bg-[url('/images/BGD.png')]">
+        <section className="mt-6 absolute bg-white dark:xl:bg-black dark:xl:text-white z-10 grid h-[278px] rounded-[15px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[486px] w-full justify-items-center gap-4 xl:bg-[url('/images/BG.png')] bg-cover py-6 xl:py-[80px] xl:dark:bg-[url('/images/BGD.png')]">
           <Image
             src="/images/icons/Vector.svg"
             width={18}
@@ -63,10 +63,10 @@ export default function Index() {
             <Dot />
           </section>
         </section>
-        <section className="xl:hidden mt-6 h-[278px] -z-10 rotate-6 absolute grid rounded-[15px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[580px] w-full justify-items-center gap-4 xl:bg-[url('/images/BG.png')] bg-cover py-6 xl:py-[80px] xl:dark:bg-[url('/images/BGD.png')]">
+        <section className="xl:hidden mt-6 h-[278px] -z-10 rotate-6 absolute  rounded-[15px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] dark:shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] dark:bg-white xl:h-[580px] w-full justify-items-center gap-4  bg-cover  ">
      
         </section>
-        <section className="xl:hidden mt-6 grid h-[278px] z-0 rotate-3  absolute rounded-[15px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[580px] w-full justify-items-center gap-4 xl:bg-[url('/images/BG.png')] bg-cover py-6 xl:py-[80px] xl:dark:bg-[url('/images/BGD.png')]">
+        <section className="xl:hidden mt-6  dark:bg-white h-[278px] z-0 rotate-3  absolute rounded-[15px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[580px] w-full justify-items-center gap-4  ">
       
         </section>
       </section>
