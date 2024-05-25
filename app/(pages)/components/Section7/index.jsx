@@ -23,7 +23,7 @@ export default function Index() {
   //
   return (
     <>
-      <section className="xl:mt-[120px] mt-[40px]  w-[90%] xl:w-full xl:h-[580px] ">
+      <section className="xl:mt-[120px] mt-[40px]  w-[90%] xl:w-full xl:h-[580px] h-[337px]">
         <header className="flex items-center justify-center gap-[22px] dark:text-white">
           <section className="flex h-4 w-4 items-center justify-center rounded-full border-[1px] border-[#6f0b9759] dark:border-[#ffffff7a]">
             <section className="flex h-3 w-3 items-center justify-center rounded-full border-[1px] border-[#6f0b97ac] dark:border-[#ffffffbf]">
