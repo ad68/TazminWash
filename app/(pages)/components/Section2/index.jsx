@@ -23,19 +23,30 @@ export default function Index() {
   //
   return (
     <>
-      <section className="w-full ">
-        <section className=" mx-auto mt-[120px] grid h-[382.29px] w-[1296.5px] justify-items-center gap-6">
-          <header className="flex items-center gap-4 text-[40px] font-bold	">
-            <Image
+      <section className="w-full">
+        <section className=" mx-auto  grid justify-items-center gap-6 xl:mt-[120px] xl:h-[382.29px] xl:w-[1296.5px] ">
+          <header className="flex items-center gap-4 ">
+            {/*             <Image
               src="/images/icons/Frame 1261154674.svg"
               width={16}
               height={16}
               alt=""
-            />
-            چرا <span className="color ">تضمین واش</span> را انتخاب کنیم؟
+            /> */}
+            <section className="flex size-4 items-center justify-center rounded-full border-[1px] border-[#6f0b9759] dark:border-[#ffffff7a]">
+              <section className="flex size-3 items-center justify-center rounded-full border-[1px] border-[#6f0b97ac] dark:border-[#ffffffbf]">
+                <div className="inline-block size-2 rounded-full bg-[#700B97]  dark:bg-white"></div>
+              </section>
+            </section>
+            <h1 className="text-[20px] font-medium text-black xl:text-[40px] xl:font-bold	dark:text-[#ffffff]">
+              چرا{" "}
+              <span className="xl:color font-extrabold text-[#700B97]  dark:text-[#700B97]">
+                تضمین واش
+              </span>{" "}
+              را انتخاب کنیم؟
+            </h1>
           </header>
-          <section className="flex gap-6">
-            <section className="mt-[-100px] px-px">
+          <section className="grid gap-6 xl:flex">
+            <section className="order-last px-px xl:order-first xl:mt-[-100px]">
               <Box
                 image={"/images/10542761 1.png"}
                 title={"شستشو با مواد نانو"}
@@ -44,19 +55,22 @@ export default function Index() {
                 }
               />
             </section>
+            <section className="order-3">
+              <Box
+                image={"/images/32165 3.png"}
+                title={"هزینه‌ی مناسب"}
+                text={"با توجه به صرفه جویی در زمان و وقت شما و بهترین مواد "}
+              />
+            </section>
+            <section>
+              <Box
+                image={"/images/cartoon.png"}
+                title={"بیمه بودن خودرو"}
+                text={"خودرو شما در هنگام شستشو بیمه می‌باشد"}
+              />
+            </section>
 
-            <Box
-              image={"/images/32165 3.png"}
-              title={"هزینه‌ی مناسب"}
-              text={"با توجه به صرفه جویی در زمان و وقت شما و بهترین مواد "}
-            />
-            <Box
-              image={"/images/cartoon.png"}
-              title={"بیمه بودن خودرو"}
-              text={"خودرو شما در هنگام شستشو بیمه می‌باشد"}
-            />
-
-            <section className="mt-[-100px] px-px">
+            <section className="order-first px-px xl:order-last xl:mt-[-100px]">
               <Box
                 image={"/images/illustration.png"}
                 title={"تکنسین متخصص"}

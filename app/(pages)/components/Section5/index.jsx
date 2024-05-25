@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Steps from "./components/Steps";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({title, text}) {
+export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -20,18 +21,36 @@ export default function Index({title, text}) {
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-  return <>
-  <section className="dark:circle">
-  <section className=" grid w-[328px] h-auto xl:h-[290px] xl:w-[574px] gap-4 xl:gap-6 rounded-2xl bg-white p-[20px] xl:p-6 shadow-2xl dark:bg-white/10 dark:backdrop-blur-sm dark:border-[1px] dark:border-[#ffffff46] dark:text-white justify-items-center xl:justify-items-start">
-            <h1 className="text-[16px] font-bold xl:text-[28px] xl:font-medium">
-                {title}
-            </h1>
-            <p className="text-justify text-[14px] font-normal xl:text-[16px] xl:font-medium leading-[27.64px]">
-              {text}
-            </p>
-            <button className="flex justify-center items-center px-[12px] xl:px-4 py-[6px] border-[1px] border-[#700B97] w-[110px] xl:w-[164px] rounded-[5px] xl:rounded-xl justify-self-end	">
-                <span className="text-[12px] xl:text-[20px] font-medium xl:font-bold text-[#700B97]">ثبت سفارش</span>
-                <Image src='/images/icons/Chevron_Left_MD.svg' width={24} height={24} alt="" className="w-[20px] h-[20px] xl:w-[24px] xl:h-6"/>
-            </button>
-          </section></section></>;
+  return (
+    <>
+      <section className="relative mt-[40px] xl:mt-[120px] dark:text-white">
+        <Image
+          src="/images/Group7.png"
+          width={1489}
+          height={157}
+          alt=""
+          className="my-[135px] xl:my-[333px] w-full"
+        />
+        <section className="absolute xl:right-[350px] xl:top-[-260px] grid w-[114px] xl:w-[239px] justify-items-center top-[-101px] right-[39px]">
+          <h1 className="number text-[32px] xl:text-[96px] font-extrabold ">01</h1>
+          <h2 className="text-[16px] xl:text-[32px] font-black">
+            ثبت <span className="text-[#700B97]">سفارش</span> کن منتظر تایید باش
+          </h2>
+        </section>
+        <section className="absolute xl:right-[45%] xl:top-[260px] grid w-[114px] xl:w-[239px] justify-items-center top-[44px] right-[35%]">
+          <h1 className="number text-[32px] xl:text-[96px] font-extrabold ">02</h1>
+          <h2 className="text-center text-[16px] xl:text-[32px] font-black ">
+            <span className="text-[#700B97]">کارواش</span> داره میاد سمتت
+          </h2>
+        </section>
+        <section className="absolute xl:left-[325px] xl:top-[-300px] grid w-[138px] xl:w-[239px] justify-items-center left-[16px] top-[-101px] ">
+          <h1 className="number text-[32px] xl:text-[96px] font-extrabold ">03</h1>
+          <h2 className="text-center text-[16px] xl:text-[32px] font-black">
+            شست‌وشو <span className="text-[#700B97]">تموم</span> ‌شد ماشین ‌شما
+            ‌آمادست
+          </h2>
+        </section>
+      </section>
+    </>
+  );
 }
