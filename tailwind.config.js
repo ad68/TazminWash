@@ -3,6 +3,7 @@ export const tailwindColors = {
   transparent: "transparent",
   current: "currentColor",
   white: "#ffffff",
+  black: "#0C0C0C",
   purple: "#3f3cbb",
   midnight: "#121063",
   metal: "#565584",
@@ -12,9 +13,6 @@ export const tailwindColors = {
   bermuda: "#78dcca",
   blue: "#0165e1",
   red: "#E14856",
-  "gray-blak": "#262626",
-  "gray-100": "#8b929a36",
-  "gray-200": "#3e4151",
 };
 
 module.exports = {
@@ -34,6 +32,9 @@ module.exports = {
     },
     extend: {
       colors: tailwindColors,
+      fontFamily: {
+        yekanbakh: ["var(--font-yekanbakh)"],
+      },
       container: {
         center: true,
         width: {
