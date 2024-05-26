@@ -23,7 +23,7 @@ export default function Index() {
   //
   return (
     <>
-      <section className="mx-auto mt-[40px] xl:my-[120px] xl:w-[1296px] w-[95%] grid gap-[25px]">
+      <section className="mx-auto mt-[40px] xl:mt-[120px] xl:w-[1296px] w-[95%] grid gap-[25px]">
         <header className="flex items-center  justify-between dark:text-white">
           <section className="flex items-center gap-2 xl:gap-[22px]">
             <section className="flex h-4 w-4 items-center justify-center rounded-full border-[1px] border-[#6f0b9759] dark:border-[#ffffff7a]">

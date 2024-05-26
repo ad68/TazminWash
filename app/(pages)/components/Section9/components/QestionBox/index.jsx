@@ -1,46 +1,59 @@
 "use client";
-import React from "react";
-import Section1 from "./components/section1";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
-import Section7 from "./components/Section7";
-import Section8 from "./components/Section8";
-import Section9 from "./components/Section9";
-//
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import Descripion from "./components/Descripion";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function page() {
+export default function Index({ question, des }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
-
+  const [scroll, setScroll] = useState(false);
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-
+  useEffect(() => {
+    console.log(scroll);
+  }, [scroll]);
   // ─── Functions ──────────────────────────────────────────────────────────────────
-  //
 
+  //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-
   return (
     <>
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Section8 />
-      <Section9 />
+      <section
+        className={`${scroll?  "grid " : ""} w-full items-center gap-6 border-y-[1px] border-[#EFEFEF] bg-white px-6 py-4 `}
+      >
+        <section className={`flex w-full gap-2 transition-all`}>
+          <button
+            onClick={() => {
+              setScroll(!scroll);
+              !scroll
+                ? (document.getElementById("plus").src =
+                    "/images/icons/expand_24.svg")
+                : (document.getElementById("plus").src =
+                    "/images/icons/collapse_24.svg");
+             !scroll ? (document.getElementById("ques").style.color = "#700B97");
+            }}
+          >
+            <Image
+              src="/images/icons/collapse_24.svg"
+              width={24}
+              height={24}
+              alt=""
+              id="plus"
+            />
+          </button>
+          <h5 id="ques" className="text-[16px] font-bold text-[#505050]">
+            {question}
+          </h5>
+        </section>
+        <section>{scroll ? <Descripion des={des} /> : ""}</section>
+      </section>
     </>
   );
 }
