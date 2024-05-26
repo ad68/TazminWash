@@ -6,7 +6,7 @@ import React from "react";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({des}) {
+export default function Index({value}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -21,7 +21,6 @@ export default function Index({des}) {
   // ──────────────────────────────────────────────────────────────
   //
   return <>
-  <section className="flex gap-2 border-r-[2px] border-[#666666]  pr-2 dark:text-white">
-    <p className="text-justify text-[12px] font-normal xl:text-[14px] xl:font-medium dark:text-white text-[#707070] xl:leading-[24.18px] leading-[21.6px]">{des}</p>
-    </section></>;
+  <input type="text" className="border-[1px] border-[#EBEBEB] p-2 xl:p-3 text-[#666666] xl:text-[16px] text-[12px] font-normal w-full xl:h-[48px] h-[40px] xl:rounded-xl rounded-[8px]" value={value}/>
+  </>;
 }
