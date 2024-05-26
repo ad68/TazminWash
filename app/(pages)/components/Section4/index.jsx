@@ -54,7 +54,7 @@ export default function Index() {
             </button>
             <section className="xl:flex h-[37px] hidden  w-[108px] justify-between ">
               <button className="flex h-[38px] w-[38px] items-center justify-center rounded-full border border-solid border-[#FFFFFF]">
-                <IconArrowRight width="10" hight="15" viewBox="0 0 8 13" />
+                <IconArrowRight width="10" height="15" viewBox="0 0 8 13" />
               </button>
               <button className="flex h-[38px] w-[38px] items-center justify-center rounded-full border border-solid border-[#FFFFFF]">
                 <IconArrowLeft viewBox="-4.9 -4.1 17.5 17.5" />

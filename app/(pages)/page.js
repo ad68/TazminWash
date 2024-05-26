@@ -41,6 +41,8 @@ export default function page() {
       <Section7 />
       <Section8 />
       <Section9 />
+      {/* <Section6 /> */}
+      {/* <Section7 /> */}
     </>
   );
 }
