@@ -63,6 +63,3 @@ export default function Index({ question, des, tabIndex, activeTab, setActiveTab
 }
 
 
-/* "/images/icons/expand_24.svg")
-                : (document.getElementById(`plus${index}`).src =
-  "/images/icons/collapse_24.svg"); */
