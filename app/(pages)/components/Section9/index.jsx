@@ -41,15 +41,15 @@ export default function Index() {
             </section>
           </section>
         </header>
-        <section className="flex xl:w-[1296px] mx-auto justify-between xl:h-[471px] items-center">
-          <section className="w-[728px]">
+        <section className="xl:flex xl:w-[1296px] w-full mx-auto justify-between xl:h-[471px] items-center">
+          <section className="xl:w-[728px] w-full px-2 mx-auto">
             <QuestionBox activeTab={activeTab} setActiveTab={setActiveTab} tabIndex={1} question='شرایط استفاده از کد تخفیف چگونه است؟' des={'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.'} />
             <QuestionBox activeTab={activeTab} setActiveTab={setActiveTab} tabIndex={2} question='شرایط استفاده از کد تخفیف چگونه است؟' des={'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.'} />
             <QuestionBox activeTab={activeTab} setActiveTab={setActiveTab} tabIndex={3} question='شرایط استفاده از کد تخفیف چگونه است؟' des={'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.'} />
             <QuestionBox activeTab={activeTab} setActiveTab={setActiveTab} tabIndex={4} question='شرایط استفاده از کد تخفیف چگونه است؟' des={'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.'} />
             <QuestionBox activeTab={activeTab} setActiveTab={setActiveTab} tabIndex={5} question='شرایط استفاده از کد تخفیف چگونه است؟' des={'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.'} />
           </section>
-          <Image src="/images/file 1.png" width={477} height={376} alt="" />
+          <Image src="/images/file 1.png" width={477} height={376} alt="" className="hidden xl:block"/>
         </section>
       </section>
     </>

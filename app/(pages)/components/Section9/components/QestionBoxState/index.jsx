@@ -41,7 +41,7 @@ export default function Index({ question, des, tabIndex, activeTab, setActiveTab
   return (
     <>
       <section
-        className={`${open ? "grid" : ""} w-full items-center gap-6 border-y-[1px] border-[#EFEFEF] bg-white px-6 py-4 `}
+        className={`${open ? "grid" : ""} w-full items-center xl:gap-6 border-y-[1px] border-[#EFEFEF] bg-white dark:bg-black dark:text-white xl:px-6 xl:py-4 py-6 px-4`}
       >
         <section className={`flex w-full gap-2 transition-all`}>
           <button onClick={toggle}>
@@ -52,11 +52,11 @@ export default function Index({ question, des, tabIndex, activeTab, setActiveTab
               alt=""
             />
           </button>
-          <h5 className={`text-[16px] font-bold ${open ? "text-[#700B97]" : "text-[#505050]"} `}>
+          <h5 className={`xl:text-[16px] text-[14px] xl:font-bold font-medium ${open ? "text-[#700B97] " : "text-[#505050] dark:text-white"} `}>
             {question}
           </h5>
         </section>
-        <section>{open ? <Descripion des={des} /> : ""}</section>
+        <section className="">{open ? <Descripion des={des} /> : ""}</section>
       </section>
     </>
   );
