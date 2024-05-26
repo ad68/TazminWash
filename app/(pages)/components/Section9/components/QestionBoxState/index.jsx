@@ -2,22 +2,37 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Descripion from "./components/Descripion";
+import { consoleLog_Blue, consoleLog_Red, consoleLog_yellow } from "@/helper";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ question, des, index }) {
+export default function Index({ question, des, tabIndex, activeTab, setActiveTab }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [scroll, setScroll] = useState(false);
+  const [open, setOpen] = useState(false)
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
   useEffect(() => {
-    console.log(scroll);
-  }, [scroll]);
+    if (activeTab === tabIndex) {
+      setOpen(true)
+    }
+    else {
+      setOpen(false)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeTab])
   // ─── Functions ──────────────────────────────────────────────────────────────────
+  const toggle = () => {
+    if (!open) {
+      setActiveTab(tabIndex)
+    }
+    else {
+      setActiveTab(0)
+    }
 
+  }
   //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
@@ -26,34 +41,28 @@ export default function Index({ question, des, index }) {
   return (
     <>
       <section
-        className={`${scroll ? "grid " : ""} w-full items-center gap-6 border-y-[1px] border-[#EFEFEF] bg-white px-6 py-4 `}
+        className={`${open ? "grid" : ""} w-full items-center gap-6 border-y-[1px] border-[#EFEFEF] bg-white px-6 py-4 `}
       >
         <section className={`flex w-full gap-2 transition-all`}>
-          <button
-            onClick={() => {
-              setScroll(!scroll);
-              !scroll
-                ? (document.getElementById(`plus${index}`).src =
-                  "/images/icons/expand_24.svg")
-                : (document.getElementById(`plus${index}`).src =
-                  "/images/icons/collapse_24.svg");
-              !scroll ? (document.getElementById(`ques${index}`).style.color = "#700B97") : (document.getElementById(`ques${index}`).style.color = "black");
-            }}
-          >
+          <button onClick={toggle}>
             <Image
-              src="/images/icons/collapse_24.svg"
+              src={open ? "/images/icons/expand_24.svg" : "/images/icons/collapse_24.svg"}
               width={24}
               height={24}
               alt=""
-              id={`plus${index}`}
             />
           </button>
-          <h5 id={`ques${index}`} className="text-[16px] font-bold text-[#505050]">
+          <h5 className={`text-[16px] font-bold ${open ? "text-[#700B97]" : "text-[#505050]"} `}>
             {question}
           </h5>
         </section>
-        <section>{scroll ? <Descripion des={des} /> : ""}</section>
+        <section>{open ? <Descripion des={des} /> : ""}</section>
       </section>
     </>
   );
 }
+
+
+/* "/images/icons/expand_24.svg")
+                : (document.getElementById(`plus${index}`).src =
+  "/images/icons/collapse_24.svg"); */
