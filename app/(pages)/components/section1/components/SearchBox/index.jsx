@@ -24,7 +24,7 @@ export default function Index() {
   return (
     <>
       <section
-        className="items-center dark:bg-searchBox-gradient mx-auto mt-[21px] gap-4 xl:gap-0 xl:mt-[123px] xl:flex-row flex-col  flex xl:h-[119px] xl:w-[1066.64px] w-full h-auto rounded-[15px] border-[1px]  border-solid border-[#ffffff1a] bg-white p-8 text-[#666666] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] dark:bg-opacity-90 dark:text-white dark:backdrop-blur-sm
+        className="items-center dark:bg-searchBox-gradient mx-auto mt-[21px] gap-4 xl:gap-0  xl:flex-row flex-col  flex xl:h-[119px] xl:w-[1066.64px] w-[90%] mx-auto h-auto rounded-[15px] border-[1px]  border-solid border-[#ffffff1a] bg-white p-8 text-[#666666] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] dark:bg-opacity-90 dark:text-white dark:backdrop-blur-sm
 "
       >
         <span className="xl:w-[155px] w-full text-base xl:text-[24px] text-center  font-bold leading-[41.45px] text-[#0C0C0C] dark:text-white">

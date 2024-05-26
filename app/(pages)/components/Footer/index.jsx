@@ -12,7 +12,8 @@ import Image from "next/image";
 function Footer() {
   return (
     <>
-      <section className="dark:bg-searchBox-gradient rounded-t-[25px] py-[20px] gap-8 xl:gap-0 dark:backdrop-blur-sm dark:bg-opacity-90 mx-auto xl:mb-[59.71px] flex xl:flex-row flex-col h-auto  w-full border-[1px] border-solid border-[#ffffff1a] bg-white text-[#666666] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[250px] xl:w-[1295px] xl:rounded-[15px] xl:px-[35px] xl:pb-[39px] xl:pt-[32px] dark:text-white">
+    <section className="w-full mt-[64px] mb-0 xl:mb-[59.71px]">
+      <section className="dark:bg-searchBox-gradient  rounded-t-[25px] py-[20px] gap-8 xl:gap-0 dark:backdrop-blur-sm dark:bg-opacity-90 mx-auto flex xl:flex-row flex-col h-auto  w-full border-[1px] border-solid border-[#ffffff1a] bg-white text-[#666666] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[250px] xl:w-[1295px] xl:rounded-[15px] xl:px-[35px] xl:pb-[39px] xl:pt-[32px] dark:text-white">
         <section className="flex flex-col gap-[14px] w-[90%] mx-auto xl:w-[291px]">
           <Image
             alt=""
@@ -191,6 +192,7 @@ function Footer() {
             />
           </section>
         </section> 
+      </section>
       </section>
     </>
   );
