@@ -21,9 +21,9 @@ export default function Index() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  /*   useEffect(() => {
+  useEffect(() => {
     console.log(scrollYPosition);
-  }, [scrollYPosition]); */
+  }, [scrollYPosition]);
   // ─── Functions ──────────────────────────────────────────────────────────────────
   const handleScroll = () => {
     const newScrollYPosition = window.pageYOffset;

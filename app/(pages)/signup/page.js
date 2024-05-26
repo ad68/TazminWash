@@ -1,6 +1,7 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Section1 from "./components/Section1";
+import { consoleLog_Blue } from "@/helper";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
@@ -15,12 +16,13 @@ export default function Index() {
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
-  //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-  return <>
-  <Section1 />
-  </>;
+  return (
+    <section className="h-[5000px]">
+      <Section1 />
+    </section>
+  );
 }
