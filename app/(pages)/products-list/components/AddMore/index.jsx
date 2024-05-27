@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { IconAltArrow, IconArrowLeft } from "@/common/icons";
+import { IconArrowLeft, IconArrowRight } from "@/common/icons";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ title, text, img, price,display }) {
+export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -23,42 +23,25 @@ export default function Index({ title, text, img, price,display }) {
   //
   return (
     <>
-      <section className={`${display} dark:bg-slider-gradient  flex h-auto w-full xl:w-[306px] flex-col rounded-2xl  border-[1px] border-solid border-[#ffffff1a]  bg-white p-[10px] xl:p-4 text-[#0C0C0C] shadow-2xl dark:text-white`}>
-        <Image src={img} width={274} height={170} alt="" />
-        <span className="mt-2 xl:mt-4 text-xs xl:text-[16px] font-medium leading-[28.44px]">
-          {title}
-        </span>
-        <p className="xl:mt-[16px] xl:text-justify text-[10px] xl:text-[12px] leading-[24px]">
-          {text}
-        </p>
-        <section className="xl:mt-8 mt-4 flex xl:flex-row flex-col w-full items-end xl:items-center xl:justify-between">
-          <span className="text-sm font-medium ">{price}</span>
-          <button className="hidden xl:flex xl:h-[40px] mt-[13px] xl:mt-0 xl:w-[96px] w-full items-center rounded-lg border-[0.5px] xl:border-[1px] border-[#700B97] dark:border-[#CFCFCF]  xl:dark:border-[#CFCFCF] xl:border-[#0C0C0C] justify-center   	">
-            <span className="text-[14px] font-medium leading-[24.18px] text-[#700B97] xl:text-[#0C0C0C] dark:text-white">
-              مشاهده
-            </span>
-
-            <IconAltArrow
-              color="white"
-              fill='white'
-              viewBox="0 0 24 25"
-              className=" hidden dark:block"
-            />
-            
-            <IconAltArrow
-              color="#700B97"
-              fill='#700B97'
-              viewBox="0 0 24 25"
-              className="dark:hidden xl:hidden xl:dark:hidden block"
-            />
-            <IconAltArrow
-              color="black"
-              fill='black'
-              viewBox="0 0 24 25"
-              className="hidden xl:block dark:hidden"
-            />
+      <section className="mx-auto mt-[40px] px-[18px] py-[22px] flex w-full items-center justify-center gap-[-24px]  xl:gap-[126px]  xl:rounded-[15px] bg-[#700B97] xl:h-[342px] xl:w-[1296px]  ">
+        <section className="flex w-full h-auto xl:h-[182px] xl:w-[448px] flex-col gap-[16px] xl:gap-6">
+          <span className="xl:mr-5  text-right text-sm xl:text-[32px] leading-[24.18px] xl:leading-[59px] text-white ">
+            با کفپوش های سه‌بعدی ماشینت رو زیبا تر کن
+          </span>
+          <button className="flex py-1 xl:py-0 xl:h-[40px] w-[50%] xl:w-[184px] items-center justify-center gap-1 xl:gap-[17px] text-xs xl:text-base rounded-[25px] bg-white xl:font-bold">
+            مشاهده
+            <IconArrowLeft viewBox="0 -1 8 13" className='hidden xl:block'/>
+            <IconArrowLeft viewBox="0 -1 8 13" width='7' height='14' className='xl:hidden'/>
           </button>
         </section>
+        <Image
+          className="w-[50%] xl:w-[464px] h-auto xl:h-[272px] bg-[radial-gradient(circle,white_-20%,transparent_50%)]"
+          alt=""
+          width={464}
+          height={272}
+          src="/images/picturemoreAdd.png"
+        
+        />
       </section>
     </>
   );

@@ -1,9 +1,10 @@
 
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import DarkMode from "./DarkMode";
 import { IconPerson } from "@/common/icons";
+import { useScroll } from "@/hooks";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
@@ -11,7 +12,7 @@ import { IconPerson } from "@/common/icons";
 
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-
+const [scrollYPosition]=useScroll()
   // ─── States ─────────────────────────────────────────────────────────────────────
 
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
@@ -24,8 +25,8 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return <>
-  <section className="fixed left-0 top-0 z-10  hidden w-full xl:block">
-        <section className="mx-auto mt-10 flex h-[41px] w-[1295px] justify-between font-medium text-[#0C0C0C] dark:text-white ">
+  <section className={`${scrollYPosition >=40?'dark:bg-black bg-white':'dark:bg-none bg-none'} transition-all fixed left-0 h-[70px] xl:flex items-center   top-0 z-10  hidden w-full `}>
+        <section className="mx-auto  flex h-[41px] w-[1295px] justify-between font-medium text-[#0C0C0C] dark:text-white ">
           <section className="flex w-[598px] items-center justify-between">
             <Image
               alt=""

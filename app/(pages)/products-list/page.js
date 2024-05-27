@@ -1,8 +1,11 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./components/Header";
 import IteemsList from "./components/IteemsList";
+import OfferList from "./components/OfferList";
+import AddMore from "./components/AddMore";
 import { IconBack, IconNext } from "@/common/icons";
+import { useWindowSize } from "@/hooks";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
@@ -10,11 +13,13 @@ import { IconBack, IconNext } from "@/common/icons";
 
 export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-
+  // const [windowHeight, windowWidth] = useWindowSize();
   // ─── States ─────────────────────────────────────────────────────────────────────
 
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-
+  // useEffect(() => {
+  //   console.log(windowHeight, windowWidth);
+  // }, [windowHeight, windowWidth]);
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
   //
@@ -24,65 +29,68 @@ export default function Index() {
   //
   return (
     <>
-      <section className="mx-auto mt-[113px] flex w-[90%]  xl:w-[1296px] flex-col items-center">
-        <h2 className="w-full text-[20px] text-center xl:text-right font-bold leading-[34.55px] dark:text-white text-[#222222]">
-        محصولات تضمین‌واش
+      <section className="mx-auto mt-[113px] flex w-[90%]  flex-col items-center xl:w-[1296px]">
+        <h2 className="w-full text-center text-[20px] font-bold leading-[34.55px] text-[#222222] xl:text-right dark:text-white">
+          محصولات تضمین‌واش
         </h2>
         <Header />
-        <IteemsList />
-        <section className="mt-[64px] dark:text-white justify-between flex h-[40px] w-fit rounded-[10px]  border border-solid border-[#E5E7EB] text-[#6B7280] shadow-[0px_1px_2px_0px_#0000000D]">
-          <span className="flex h-full cursor-pointer border-l border-solid border-[#E5E7EB]  w-[70px] items-center justify-center gap-2">
-            <IconBack
-              viewBox="0 0 8 8"
-              width="10"
-              height="20"
-              color="#6B7280"
-              fill="#6B7280"
-              className='dark:hidden '
-            />
-              <IconBack
-              viewBox="0 0 8 8"
-              width="10"
-              height="20"
-              color="white"
-              fill="white"
-              className='dark:block hidden '
-            />
-            قبل
-          </span>
-          <span className="w-[40px] cursor-pointer h-full border-l border-solid border-[#E5E7EB]  hover:bg-[#700B97] hover:text-white flex justify-center items-center">
-            1
-          </span>
-          <span className="w-[40px] cursor-pointer h-full border-l border-solid border-[#E5E7EB] hover:bg-[#700B97] hover:text-white flex justify-center items-center">
-            2
-          </span>
-          <span className="w-[40px] cursor-pointer h-full border-l border-solid border-[#E5E7EB] hover:bg-[#700B97] hover:text-white flex justify-center items-center">
-            3
-          </span>
-          <span className="w-[40px] cursor-pointer h-full hover:bg-[#700B97] hover:text-white flex justify-center items-center">
-            4
-          </span>
-          <span className="flex h-full cursor-pointer  border-r border-solid border-[#E5E7EB] w-[70px] items-center justify-center gap-2">
+      </section>
+      <IteemsList />
+      <OfferList />
+      <IteemsList />
+      <AddMore />
+      <IteemsList />
+      <section className="mx-auto mt-[64px] flex h-[40px] w-fit justify-between rounded-[10px] border  border-solid border-[#E5E7EB] text-[#6B7280] shadow-[0px_1px_2px_0px_#0000000D] dark:text-white">
+        <span className="flex h-full w-[70px] cursor-pointer items-center justify-center  gap-2 border-l border-solid border-[#E5E7EB]">
+          <IconBack
+            viewBox="0 0 8 8"
+            width="10"
+            height="20"
+            color="#6B7280"
+            fill="#6B7280"
+            className="dark:hidden "
+          />
+          <IconBack
+            viewBox="0 0 8 8"
+            width="10"
+            height="20"
+            color="white"
+            fill="white"
+            className="hidden dark:block "
+          />
+          قبل
+        </span>
+        <span className="flex h-full w-[40px] cursor-pointer items-center justify-center  border-l border-solid border-[#E5E7EB] hover:bg-[#700B97] hover:text-white">
+          1
+        </span>
+        <span className="flex h-full w-[40px] cursor-pointer items-center justify-center border-l border-solid border-[#E5E7EB] hover:bg-[#700B97] hover:text-white">
+          2
+        </span>
+        <span className="flex h-full w-[40px] cursor-pointer items-center justify-center border-l border-solid border-[#E5E7EB] hover:bg-[#700B97] hover:text-white">
+          3
+        </span>
+        <span className="flex h-full w-[40px] cursor-pointer items-center justify-center hover:bg-[#700B97] hover:text-white">
+          4
+        </span>
+        <span className="flex h-full w-[70px]  cursor-pointer items-center justify-center gap-2 border-r border-solid border-[#E5E7EB]">
           بعد
-            <IconNext
-              viewBox="0 0 8 8"
-              width="10"
-              height="20"
-              color="#6B7280"
-              fill="#6B7280"
-              className='dark:hidden '
-            />
-              <IconNext
-              viewBox="0 0 8 8"
-              width="10"
-              height="20"
-              color="white"
-              fill="white"
-              className='dark:block hidden '
-            />
-          
-          </span>
-        </section>
+          <IconNext
+            viewBox="0 0 8 8"
+            width="10"
+            height="20"
+            color="#6B7280"
+            fill="#6B7280"
+            className="dark:hidden "
+          />
+          <IconNext
+            viewBox="0 0 8 8"
+            width="10"
+            height="20"
+            color="white"
+            fill="white"
+            className="hidden dark:block "
+          />
+        </span>
       </section>
     </>
   );
