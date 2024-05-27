@@ -6,7 +6,7 @@ import React from "react";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({value}) {
+export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -20,7 +20,38 @@ export default function Index({value}) {
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-  return <>
-  <input type="text" className="border-[1px] border-[#EBEBEB] p-2 xl:p-3 text-[#666666] dark:bg-black/10 dark:text-white xl:text-[16px] text-[12px] font-normal w-full xl:h-[48px] h-[40px] xl:rounded-xl rounded-[8px]" value={value}/>
-  </>;
+  return (
+    <>
+      <section>
+        <ul className="grid gap-[64px] text-[#434343] xl:gap-[56px] dark:text-white">
+          <li className=" flex items-center gap-6">
+            <span className="flex size-6 items-center justify-center rounded-full bg-[#D3B3DF] text-[#700B97] xl:size-8">
+              1
+            </span>
+            آقا و داشتن حداقل 20 سال و حداکثر 45 سال
+          </li>
+          <li className=" flex items-center gap-6">
+            <span className="flex size-6 items-center justify-center rounded-full bg-[#D3B3DF] text-[#700B97] xl:size-8">
+              2
+            </span>
+            پایبندی به تعهدات و زمان‌بندی مشتریان          </li>
+          <li className=" flex items-center gap-6">
+            <span className="flex size-6 items-center justify-center rounded-full bg-[#D3B3DF] text-[#700B97] xl:size-8">
+              3
+            </span>
+            داشتن مدرک رانندگی و دیگر مجوزهای لازم           </li>
+          <li className=" flex items-center gap-6">
+            <span className="flex size-6 items-center justify-center rounded-full bg-[#D3B3DF] text-[#700B97] xl:size-8">
+              4
+            </span>
+            رعایت اصول بهداشتی و ایمنی در ارائه خدمات          </li>
+          <li className=" flex items-center gap-6">
+            <span className="flex size-6 items-center justify-center rounded-full bg-[#D3B3DF] text-[#700B97] xl:size-8">
+              5
+            </span>
+            توانایی ارتباط موثر با مشتریان           </li>
+        </ul>
+      </section>
+    </>
+  );
 }

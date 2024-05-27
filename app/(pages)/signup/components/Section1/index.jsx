@@ -27,15 +27,15 @@ export default function Index() {
   return (
     <>
       <section className="w-full">
-        <section className="mx-auto mt-[89px] grid w-[95%] justify-between xl:mt-[137px] xl:flex xl:w-[1296px]">
+        <section className="mx-auto mt-[42px] grid w-[95%] justify-items-center xl:justify-between xl:mt-[137px] xl:flex xl:w-[1296px]">
           <section className="grid">
             <header>
-              <h1 className="w-[90%] text-center text-[20px] font-extrabold leading-[34.55px] text-[#404040] xl:w-[663px] xl:text-right xl:text-[40px] xl:leading-[69.09px]">
+              <h1 className="w-[90%] mx-auto text-center text-[20px] font-extrabold leading-[34.55px] text-[#404040] dark:text-white xl:w-[663px] xl:text-right xl:text-[40px] xl:leading-[69.09px]">
                 به راحتی ثبت نام کن و به جمع سفیرانِ
                 <span className="text-[#700B97]"> تضمین واش </span> بپیوند
               </h1>
             </header>
-            <h2 className="hmt-8 text-[14px] font-normal xl:text-[24px] xl:font-medium">
+            <h2 className="hmt-8 mx-auto dark:text-white text-[14px] font-normal xl:text-[24px] xl:font-medium">
               یک بار انلاین، یک بار حضوری ثبت نامت نهایی میشه!{" "}
             </h2>
             <Image
@@ -48,8 +48,8 @@ export default function Index() {
           </section>
 
         </section>
-        <section className={`w-full ${scrollYPosition >= 800 ? "absolute top-[890px]" : "fixed top-[89px]"}  left-0 `}>
-          <section className="w-[1296px] mx-auto flex justify-end ">
+        <section className={`w-full ${scrollYPosition >= 800 ? "xl:absolute xl:top-[890px]" : "xl:fixed xl:top-[89px]"}  xl:left-0 `}>
+          <section className="xl:w-[1296px] mx-auto flex xl:justify-end justify-center">
             <SideBar />
           </section>
         </section>

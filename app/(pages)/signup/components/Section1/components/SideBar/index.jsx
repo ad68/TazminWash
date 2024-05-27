@@ -22,10 +22,10 @@ export default function Index() {
   //
   return <>
 
-    <aside className={`xl:w-[414px] w-[95%] xl:h-[685px] bg-white shadow-md rounded-2xl px-4 py-6 grid gap-6 mt-6`}>
+    <aside className={`xl:w-[414px] w-[95%] xl:h-[685px] bg-white shadow-md rounded-2xl px-4 py-6 grid gap-6 mt-6 dark:bg-white/10 dark:backdrop-blur-sm dark:border-[1px] dark:border-[#ffffff46] dark:text-white  dark:bg-searchBox-gradient dark:bg-opacity-90 `}>
       <header>
-        <h1 className="xl:text-[24px] xl:font-bold text-[#404040]">فرم ثبت‌نام سفیران</h1>
-        <h2 className="text-[16px] font-normal text-[#434343]">همین حالا ثبت‌نام کنید!</h2>
+        <h1 className="xl:text-[24px] xl:font-bold text-[#404040] dark:text-white">فرم ثبت‌نام سفیران</h1>
+        <h2 className="text-[16px] font-normal text-[#434343] dark:text-white">همین حالا ثبت‌نام کنید!</h2>
       </header>
       <Input value={"نام"} />
       <Input value={"نام خانوادگی"} />
