@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
 import Image from "next/image";
-import SideBar from "./components/SideBar";
+import SignupForm from "./components/SignupForm";
 import { useScroll, useWindowSize } from "@/hooks";
 import { consoleLog_BlackGreen, consoleLog_BlackYellow } from "@/helper";
 // ────────────────────────────────────────────────────────── I ──────────
@@ -27,16 +27,16 @@ export default function Index() {
   return (
     <>
       <section className="w-full">
-        <section className="mx-auto mt-[42px] grid w-[95%] justify-items-center xl:justify-between xl:mt-[137px] xl:flex xl:w-[1296px]">
-          <section className="grid">
+        <section className="mx-auto mt-[42px] grid w-[95%] justify-items-center  xl:justify-between xl:mt-[137px] xl:flex  xl:w-[1296px]">
+          <section className="grid justify-self-start	">
             <header>
               <h1 className="w-[90%] mx-auto text-center text-[20px] font-extrabold leading-[34.55px] text-[#404040] dark:text-white xl:w-[663px] xl:text-right xl:text-[40px] xl:leading-[69.09px]">
                 به راحتی ثبت نام کن و به جمع سفیرانِ
                 <span className="text-[#700B97]"> تضمین واش </span> بپیوند
               </h1>
             </header>
-            <h2 className="hmt-8 mx-auto dark:text-white text-[14px] font-normal xl:text-[24px] xl:font-medium">
-              یک بار انلاین، یک بار حضوری ثبت نامت نهایی میشه!{" "}
+            <h2 className="mt-8 text-center xl:text-right dark:text-white text-[14px] font-normal xl:text-[24px] xl:font-medium">
+              یک بار انلاین، یک بار حضوری ثبت نامت نهایی میشه!
             </h2>
             <Image
               src="/images/16276547_5748997 2.png"
@@ -48,9 +48,9 @@ export default function Index() {
           </section>
 
         </section>
-        <section className={`w-full ${scrollYPosition >= 800 ? "xl:absolute xl:top-[890px]" : "xl:fixed xl:top-[89px]"}  xl:left-0 `}>
+        <section className={`w-full ${scrollYPosition >= 2020 ? "xl:absolute xl:top-[2100px]" : "xl:fixed xl:top-[89px]"}  xl:left-0 `}>
           <section className="xl:w-[1296px] mx-auto flex xl:justify-end justify-center">
-            <SideBar />
+            <SignupForm />
           </section>
         </section>
       </section>

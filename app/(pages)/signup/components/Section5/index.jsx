@@ -1,12 +1,6 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Section1 from "./components/Section1";
-import { consoleLog_Blue } from "@/helper";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
+import React from "react";
+
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
@@ -21,18 +15,20 @@ export default function Index() {
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
+  //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-  return (
-    <section className="">
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
+  return <>
+  <section className="bg-[url('/images/007.png')] bg-contain xl:w-full bg-no-repeat xl:h-[480px] h-[120px] mt-[56px] xl:mt-[135px] grid justify-items-center gap-4 xl:flex justify-center items-center xl:text-[32px] text-[16px] font-bold xl:font-extrabold">
+    <section className="grid xl:gap-6 gap-3 justify-items-center dark:text-white">
+
+    <h1>شرایط رو خوندی؟</h1>
+    <h1>پس همین الان عضو سفیران تضمین واش شو!</h1>
     </section>
-  );
+    <button className="text-white text-[14px] font-normal bg-gradient-to-r from-[#CE50FF] to-[#700B97] w-[121px] h-[32px] flex justify-center items-center rounded xl:hidden">
+        ثبت نام
+    </button>
+    </section></>;
 }

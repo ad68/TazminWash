@@ -1,18 +1,12 @@
 "use client";
-import React, { useEffect, useState } from "react";
-import Section1 from "./components/Section1";
-import { consoleLog_Blue } from "@/helper";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
+import React from "react";
+
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({des}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -21,18 +15,13 @@ export default function Index() {
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
 
+  //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-  return (
-    <section className="">
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-    </section>
-  );
+  return <>
+  <section className="flex gap-2 border-r-[2px] border-[#666666]  pr-2 dark:text-white">
+    <p className="text-justify text-[12px] font-normal xl:text-[14px] xl:font-medium dark:text-white text-[#707070] xl:leading-[24.18px] leading-[21.6px]">{des}</p>
+    </section></>;
 }

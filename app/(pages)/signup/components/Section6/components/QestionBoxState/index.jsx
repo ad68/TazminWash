@@ -1,38 +1,65 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Section1 from "./components/Section1";
-import { consoleLog_Blue } from "@/helper";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
+import Image from "next/image";
+import Descripion from "./components/Descripion";
+import { consoleLog_Blue, consoleLog_Red, consoleLog_yellow } from "@/helper";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({ question, des, tabIndex, activeTab, setActiveTab }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
-
+  const [open, setOpen] = useState(false)
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-
+  useEffect(() => {
+    if (activeTab === tabIndex) {
+      setOpen(true)
+    }
+    else {
+      setOpen(false)
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeTab])
   // ─── Functions ──────────────────────────────────────────────────────────────────
+  const toggle = () => {
+    if (!open) {
+      setActiveTab(tabIndex)
+    }
+    else {
+      setActiveTab(0)
+    }
 
+  }
+  //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="">
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-    </section>
+    <>
+      <section
+        className={`${open ? "grid" : ""} w-full items-center xl:gap-6 border-y-[1px] border-[#EFEFEF] bg-white dark:bg-black dark:text-white xl:px-6 xl:py-4 py-6 px-4`}
+      >
+        <section className={`flex w-full gap-2 transition-all`}>
+          <button onClick={toggle}>
+            <Image
+              src={open ? "/images/icons/expand_24.svg" : "/images/icons/collapse_24.svg"}
+              width={24}
+              height={24}
+              alt=""
+            />
+          </button>
+          <h5 className={`xl:text-[16px] text-[14px] xl:font-bold font-medium ${open ? "text-[#700B97] " : "text-[#505050] dark:text-white"} `}>
+            {question}
+          </h5>
+        </section>
+        <section className="">{open ? <Descripion des={des} /> : ""}</section>
+      </section>
+    </>
   );
 }
+
+
