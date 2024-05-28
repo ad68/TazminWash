@@ -48,7 +48,6 @@ export default function Index() {
         <IconVectorBg viewBox="0 0 126 186" width='124.59' height='182.5' color='#700B97' fill='#700B97' className='dark:hidden hidden xl:block'/>
         <IconVectorBg viewBox="0 0 126 186" width='124.59' height='182.5' color='white' fill='white' className='dark:xl:block  hidden'/>
         </section>
-
         <SearchBox />
       </section>
     </>

@@ -6,7 +6,7 @@ import Card from "../Card";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({showMoal}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -31,6 +31,7 @@ export default function Index() {
             price=" تومان ۷۵,۰۰۰
          "
             display="hidden xl:flex"
+            showMoal={showMoal}
           />
           <Card
             title="شامپو بدنه خودرو سوپر فوم یاتاش"
@@ -39,6 +40,7 @@ export default function Index() {
             price=" تومان ۷۵,۰۰۰
          "
             display=""
+            showMoal={showMoal}
           />
           <Card
             title="شامپو  سوپر فوم یاتاش"
@@ -46,6 +48,7 @@ export default function Index() {
             img="/images/Rectanglebg.png"
             price=" تومان ۷۵,۰۰۰
          "
+         showMoal={showMoal}
           />
           <Card
             title="شامپو  سوپر فوم یاتاش"
@@ -54,6 +57,7 @@ export default function Index() {
             price=" تومان ۷۵,۰۰۰
          "
             display="hidden xl:flex"
+            showMoal={showMoal}
           />
   
         </section>

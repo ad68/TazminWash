@@ -8,6 +8,7 @@ export { default as IconBtnProducts } from './src/btn-products.jsx';
 export { default as IconCalender } from './src/calender.jsx';
 export { default as IconCall } from './src/Call.jsx';
 export { default as IconCar } from './src/car.jsx';
+export { default as IconClose } from './src/close.jsx';
 export { default as IconDarkModeCircle } from './src/DarkModeCircle.jsx';
 export { default as IconInstagram } from './src/instagram.jsx';
 export { default as IconLinkedin } from './src/linkedin.jsx';
