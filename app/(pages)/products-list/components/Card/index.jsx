@@ -23,7 +23,7 @@ export default function Index({ title, text, img, price,display,discount,discoun
   //
   return (
     <>
-      <section className={`${display} dark:bg-slider-gradient justify-between  flex h-auto w-full xl:w-[306px] flex-col rounded-2xl  border-[1px] border-solid border-[#ffffff1a]  bg-white p-[10px] xl:p-4 text-[#0C0C0C] shadow-2xl dark:text-white`}>
+      <section className={`${display} dark:bg-slider-gradient justify-between dark:bg-white/5 dark:backdrop-blur-sm  flex h-auto w-full xl:w-[306px] flex-col rounded-2xl  border-[1px] border-solid border-[#ffffff1a]  bg-white p-[10px] xl:p-4 text-[#0C0C0C] shadow-2xl dark:text-white`}>
         <Image src={img} width={274} height={170} alt="" />
         <span className="mt-2 xl:mt-4 text-xs xl:text-[16px] font-medium leading-[28.44px]">
           {title}
@@ -36,7 +36,7 @@ export default function Index({ title, text, img, price,display,discount,discoun
           {
           oldPrice?<span className="text-sm line-through font-medium text-[#666666]">{oldPrice}</span>:""
          }
-          <span className="text-sm font-medium ">{price}</span>
+          <span className="text-sm font-medium ">{price}</span>  
         
           </section>
           {
