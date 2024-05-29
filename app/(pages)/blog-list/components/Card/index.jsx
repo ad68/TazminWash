@@ -30,14 +30,14 @@ export default function Index({ image, title, text, date }) {
           alt=""
           className="h-auto mx-auto w-[30%] mr-2 xl:mr-0 rounded-[5px] xl:h-[200px] xl:w-[306px]"
         />
-        <section className="flex w-[70%] mx-auto flex-col px-4 xl:pb-4 ">
-          <span className="text-[12px] w-[65%] font-bold leading-[20.73px] text-clip whitespace-nowrap overflow-hidden  xl:text-[16px] xl:font-normal xl:leading-[27.64px]">
+        <section className="flex w-[70%] xl:w-full mx-auto flex-col px-4 xl:pb-4 ">
+          <span className="text-[12px] xl:w-full w-[75%] font-bold leading-[20.73px] text-ellipsis xl:whitespace-normal whitespace-nowrap overflow-hidden  xl:text-[16px] xl:font-normal xl:leading-[27.64px]">
             {title}
           </span>
-          <span className="leading-[20px] w-[90%] text-[#404040] dark:text-white  text-ellipsis whitespace-pre-wrap overflow-hidden  mt-[3px] xl:mt-4 text-justify text-[10px] font-normal xl:text-[14px] dark:xl:font-light  xl:font-light xl:leading-[24.18px]">
+          <span className="leading-[20px] xl:w-full w-[90%] text-[#404040] dark:text-white  text-ellipsis whitespace-pre-wrap overflow-hidden  mt-[3px] xl:mt-4 text-justify text-[10px] font-normal xl:text-[14px] dark:xl:font-light  xl:font-light xl:leading-[24.18px]">
             {text}
           </span>
-          <section className="flex mt-[8px] w-[70%] xl:mt-8 justify-between">
+          <section className="flex mt-[8px] xl:w-full w-[70%] xl:mt-8 justify-between">
             <section className="flex items-center gap-2">
               <Image
                 src="/images/icons/Calender 1.svg"
