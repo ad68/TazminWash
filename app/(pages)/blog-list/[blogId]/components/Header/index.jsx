@@ -1,33 +1,20 @@
 "use client";
-import React, { useState } from "react";
-import Header from "./components/Header";
-import IteemsList from "./components/IteemsList";
-import OfferList from "./components/OfferList";
-import AddMore from "./components/AddMore";
-
-import ProductModal from "./components/ProductModal";
-import Pagination from "./components/Pagination";
+import React from "react";
+import Image from "next/image";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index() {
+export default function Index({src}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
-  // const [windowHeight, windowWidth] = useWindowSize();
+
   // ─── States ─────────────────────────────────────────────────────────────────────
-  const [modalOpen, setModalOpen] = useState(false);
+
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-  // useEffect(() => {
-  //   console.log(windowHeight, windowWidth);
-  // }, [windowHeight, windowWidth]);
+
   // ─── Functions ──────────────────────────────────────────────────────────────────
-  const showMoal = () => {
-    setModalOpen(true);
-  };
-  const closeModal = () => {
-    setModalOpen(false);
-  };
+
   //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
@@ -35,19 +22,24 @@ export default function Index() {
   //
   return (
     <>
-      <ProductModal closeModal={closeModal} modalOpen={modalOpen} />
-      <section className="mx-auto mt-[113px] flex w-[90%]  flex-col items-center xl:w-[1296px]">
-        <h2 className="w-full text-center text-[20px] font-bold leading-[34.55px] text-[#222222] xl:text-right dark:text-white">
-          محصولات تضمین‌واش
-        </h2>
-        <Header />
+      <section className="flex h-auto  w-full items-center gap-4 rounded-[15px] bg-[linear-gradient(83.83deg,_#700B97_1.63%,_#B800FF_99.5%)]  px-4 py-[13px] xl:h-[304px] xl:gap-8 xl:rounded-[23px] xl:pl-[101px] xl:pr-[42px] xl:py-[30px]">
+        <Image
+          src={src}
+          width={304}
+          height={251}
+          alt=""
+          className="h-auto w-[40%] rounded-[9.32px] xl:h-[251px] xl:w-[304px] xl:rounded-[20px]"
+        />
+        <section className=" self-start xl:self-end">
+          <section className=" text-sm font-extrabold leading-[24.18px] text-white xl:text-[24px] xl:leading-[41.45px]">
+            تاثیر تمیزی خودرو بر استحکام و طول عمر قطعات !
+          </section>
+          <p className=" text-[10px] leading-[17.27px] mt-2 text-white  xl:font-bold xl:text-[16px] xl:leading-[27.64px]">
+            تمیزی و نگهداری مناسب خودرو، تأثیر بسزایی در ایجاد اعتماد و رضایت
+            مشتریان دارد.
+          </p>
+        </section>
       </section>
-      <IteemsList showMoal={showMoal} />
-      <OfferList showMoal={showMoal} />
-      <IteemsList />
-      <AddMore />
-      <IteemsList />
-      <Pagination />
     </>
   );
 }

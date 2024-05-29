@@ -22,13 +22,13 @@ export default function Index({ image, title, text, date }) {
   //
   return (
     <>
-      <section className="flex xl:flex-col xl:h-[441px] py-[14px] xl:py-0 xl:w-[306px]  rounded-[10px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] w-full xl:gap-4 gap-1  dark:bg-white/5 dark:backdrop-blur-sm dark:bg-slider-gradient  dark:border-[1px]  dark:border-[#ffffff46] dark:text-white dark:dark:bg-slider-gradient">
+      <section className="flex xl:flex-col xl:h-[441px] overflow-hidden py-[14px] xl:py-0 xl:w-[306px]  rounded-[10px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] w-full xl:gap-4 gap-1  dark:bg-white/5 dark:backdrop-blur-sm dark:bg-slider-gradient  dark:border-[1px]  dark:border-[#ffffff46] dark:text-white dark:dark:bg-slider-gradient">
         <Image
           src={image}
           width={306}
           height={200}
           alt=""
-          className="h-auto mx-auto w-[30%] mr-2 xl:mr-0 rounded-[5px] xl:h-[200px] xl:w-[306px]"
+          className="h-auto mx-auto w-[30%] mr-2 xl:mr-0 xl:rounded-none rounded-[5px] xl:h-[200px] xl:w-[306px]"
         />
         <section className="flex w-[70%] xl:w-full mx-auto flex-col px-4 xl:pb-4 ">
           <span className="text-[12px] xl:w-full w-[75%] font-bold leading-[20.73px] text-ellipsis xl:whitespace-normal whitespace-nowrap overflow-hidden  xl:text-[16px] xl:font-normal xl:leading-[27.64px]">
@@ -51,7 +51,7 @@ export default function Index({ image, title, text, date }) {
               </span>
             </section>
             <button className="hidden items-center xl:flex">
-              <span className="text-[16px] font-medium text-[#700B97]">
+              <span className="text-[16px] leading-[27.64px] font-medium text-[#700B97]">
                 خواندن
               </span>
               <Image
