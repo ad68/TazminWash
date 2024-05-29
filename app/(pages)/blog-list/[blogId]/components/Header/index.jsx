@@ -22,7 +22,7 @@ export default function Index({src}) {
   //
   return (
     <>
-      <section className="flex h-auto  w-full items-center gap-4 rounded-[15px] bg-[linear-gradient(83.83deg,_#700B97_1.63%,_#B800FF_99.5%)]  px-4 py-[13px] xl:h-[304px] xl:gap-8 xl:rounded-[23px] xl:pl-[101px] xl:pr-[42px] xl:py-[30px]">
+      <section className="flex h-auto dark:bg-searchBox-gradient border-[1px] border-solid border-[#ffffff1a]  dark:backdrop-blur-sm dark:bg-opacity-90  w-full items-center gap-4 rounded-[15px] bg-[linear-gradient(83.83deg,_#700B97_1.63%,_#B800FF_99.5%)]  px-4 py-[13px] xl:h-[304px] xl:gap-8 xl:rounded-[23px] xl:pl-[101px] xl:pr-[42px] xl:py-[30px]">
         <Image
           src={src}
           width={304}

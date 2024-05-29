@@ -23,7 +23,7 @@ export default function Index() {
   //
   return (
     <>
-      <section className="w-full flex xl:mt-[41px] text-sm xl:text-base mt-6 items-center gap-[51px] xl:gap-0 xl:justify-between">
+      <section className="w-full  flex xl:mt-[41px] text-sm xl:text-base mt-6 items-center gap-[51px] xl:gap-0 xl:justify-between">
         <section className=" items-center flex gap-[12px] dark:text-white text-[#070707]">
             <IconBtnProducts viewBox="0 0 20 22" width='26' height='18' color='black' fill='black' className='cursor-pointer dark:hidden'/>
             <IconBtnProducts viewBox="0 0 20 22" width='26' height='18' color='white' fill='white' className='cursor-pointer dark:block hidden'/>
