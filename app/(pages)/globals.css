@@ -210,3 +210,6 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700b97', endColorstr='#ebe9f9', GradientType=1 );
   }
 }
+body{
+  background-color: #F9FAFA;
+}

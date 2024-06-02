@@ -1,21 +1,12 @@
 "use client";
 import React from "react";
-import Section1 from "./components/section1";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
-import Section7 from "./components/Section7";
-import Section8 from "./components/Section8";
-import Section9 from "./components/Section9";
-//
+import Item from "./Item";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function page() {
+export default function Index({selectTime, setSelectTime }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -23,26 +14,44 @@ export default function page() {
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
-  //
 
+  //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-
-  return (
-    <>
-    <section className="bg-[#F9FAFA]">
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Section8 />
-      <Section9 />
-      </section>
-    </>
-  );
+  return <>   <section className="xl:mx-6  relative mt-8 grid grid-cols-3 justify-center py-6 px-4 xl:px-0 xl:py-0 xl:flex h-auto xl:h-[104px] mx-auto w-[85%]  xl:w-[588px]  items-center gap-2 xl:gap-4 rounded-[10px] border border-solid border-[#EBEBEB] xl:p-8">
+      <span className="absolute leading-[27.64px] w-[51px] h-[28px] flex justify-center items-center bg-[#FFFFFF] text-[#666666] top-[-15px] right-[24px]">ساعت</span>
+  <Item
+  selectTime={selectTime} setSelectTime={setSelectTime}
+    value={1}
+    time='8-10'
+  />
+  <Item
+   selectTime={selectTime} setSelectTime={setSelectTime}
+    value={2}
+    time='10-12'
+  />
+  <Item
+selectTime={selectTime} setSelectTime={setSelectTime}
+    value={3}
+    time='12-14'
+  />
+  <Item
+  selectTime={selectTime} setSelectTime={setSelectTime}
+    value={4}
+    time='14-16'
+  />
+  <Item
+selectTime={selectTime} setSelectTime={setSelectTime}
+    value={5}
+    time='16-18'
+  />
+  <Item
+  selectTime={selectTime} setSelectTime={setSelectTime}
+    value={6}
+    time='18-20'
+  />
+  
+</section></>;
 }

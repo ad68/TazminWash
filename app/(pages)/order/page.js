@@ -1,48 +1,71 @@
 "use client";
-import React from "react";
-import Section1 from "./components/section1";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
-import Section7 from "./components/Section7";
-import Section8 from "./components/Section8";
-import Section9 from "./components/Section9";
-//
+import React, { useEffect, useState } from "react";
+import TypeOfCar from "./components/TypeOfCar";
+import Service from "./components/Service";
+import AdditionalServices from "./components/AdditionalServices";
+import Information from "./components/Information";
+import DetailsPayment from "./components/DetailsPayment";
+import ShippingTime from "./components/ShippingTime";
+import Address from "./components/Address";
+import StepBox from "./components/StepsBox";
+
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function page() {
+export default function Index() {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
-
+  const [activeTab, setActiveTab] = useState(1);
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
 
   // ─── Functions ──────────────────────────────────────────────────────────────────
-  //
 
+  //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-
   return (
     <>
-    <section className="bg-[#F9FAFA]">
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Section8 />
-      <Section9 />
-      </section>
+      <StepBox activeTab={activeTab} setActiveTab={setActiveTab} />
+      {activeTab === 1 ? (
+        <TypeOfCar activeTab={activeTab} setActiveTab={setActiveTab} />
+      ) : (
+        <></>
+      )}
+      {activeTab === 2 ? (
+        <Service activeTab={activeTab} setActiveTab={setActiveTab} />
+      ) : (
+        <></>
+      )}
+      {activeTab === 3 ? (
+        <ShippingTime activeTab={activeTab} setActiveTab={setActiveTab} />
+      ) : (
+        <></>
+      )}
+      {activeTab === 4 ? (
+        <Address activeTab={activeTab} setActiveTab={setActiveTab} />
+      ) : (
+        <></>
+      )}
+      {activeTab === 5 ? (
+        <Information activeTab={activeTab} setActiveTab={setActiveTab} />
+      ) : (
+        <></>
+      )}
+      {activeTab === 6 ? (
+        <AdditionalServices activeTab={activeTab} setActiveTab={setActiveTab} />
+      ) : (
+        <></>
+      )}
+      {activeTab === 7 ? (
+        <DetailsPayment activeTab={activeTab} setActiveTab={setActiveTab} />
+      ) : (
+        <></>
+      )}{" "}
     </>
   );
 }

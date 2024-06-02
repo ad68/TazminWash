@@ -1,47 +1,80 @@
 "use client";
-import React from "react";
-import Section1 from "./components/section1";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
-import Section7 from "./components/Section7";
-import Section8 from "./components/Section8";
-import Section9 from "./components/Section9";
-//
+import { IconHatchback } from "@/common/icons";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import { title } from "process";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function page() {
+export default function Index({
+  img,
+  title,
+  value,
+  serviceType,
+  setServiceType,
+  price,
+  values,
+  creatServiceType,
+  deleateServiceType
+}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
-
+const [checkedBox,setCheckedBox]=useState(false)
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-
+useEffect(()=>{
+if(checkedBox){
+  creatServiceType(value);
+}else{
+  deleateServiceType(value)
+}
+},[checkedBox])
   // ─── Functions ──────────────────────────────────────────────────────────────────
-  //
 
+  //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-
   return (
     <>
-    <section className="bg-[#F9FAFA]">
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Section8 />
-      <Section9 />
+      <section
+        onClick={() => {
+          setCheckedBox(!checkedBox)
+          
+        }}
+        className={` flex h-[46px] w-full cursor-pointer items-center justify-between  rounded-lg  border border-solid px-4 ${ serviceType.includes(value) ? "border-[#700B97]" : "border-[#EBEBEB]"}`}
+      >
+        <section className="flex items-center gap-4">
+          <span
+            className={`flex h-[13.33PX] w-[13.33PX] items-center justify-center rounded-[3.33px]  ${serviceType.includes(value) ? "bg-[#700B97]" : "bg-[#F1E7F5]"} `}
+          >
+            {serviceType.includes(value) ? (
+              <Image
+                alt=""
+                width={8}
+                height={6}
+                src="/images/icons/VectorTick.svg"
+                className="z-10"
+              />
+            ) : (
+              ""
+            )}
+          </span>
+          <section
+            className={`flex text-sm xl:text-base gap-1 ${serviceType.includes(value) ? "text-[#700B97]" : "text-[#222222]"}`}
+          >
+            {title}
+          </section>
+        </section>
+
+        <span
+          className={`justify-self-end text-xs ${serviceType.includes(value)? "text-[#700B97]" : "text-[#222222]"}`}
+        >
+          {price}
+        </span>
       </section>
     </>
   );

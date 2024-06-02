@@ -25,7 +25,7 @@ const [scrollYPosition]=useScroll()
   // ──────────────────────────────────────────────────────────────
   //
   return <>
-  <section className={`${scrollYPosition >=40?'dark:bg-black bg-white':'dark:bg-none bg-none'} transition-all fixed left-0 h-[70px] xl:flex items-center   top-0 z-10  hidden w-full `}>
+  <section className={`${scrollYPosition >=40?'dark:bg-black bg-[#F9FAFA]':'dark:bg-none bg-none'} transition-all fixed left-0 h-[70px] xl:flex items-center   top-0 z-10  hidden w-full `}>
         <section className="mx-auto  flex h-[41px] w-[1295px] justify-between font-medium text-[#0C0C0C] dark:text-white ">
           <section className="flex w-[598px] items-center justify-between">
             <Image

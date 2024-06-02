@@ -1,47 +1,51 @@
 "use client";
-import React from "react";
-import Section1 from "./components/section1";
-import Section2 from "./components/Section2";
-import Section3 from "./components/Section3";
-import Section4 from "./components/Section4";
-import Section5 from "./components/Section5";
-import Section6 from "./components/Section6";
-import Section7 from "./components/Section7";
-import Section8 from "./components/Section8";
-import Section9 from "./components/Section9";
-//
+import React, { useEffect, useState } from "react";
+import Step from "./Step";
+import { consoleLog_BlackOrange } from "@/helper";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function page() {
+export default function Index({activeTab,setActiveTab}) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
 
   // ─── Life Cycle ─────────────────────────────────────────────────────────────────
-
+  useEffect(() => {
+    consoleLog_BlackOrange(activeTab)
+   }, [activeTab]);
   // ─── Functions ──────────────────────────────────────────────────────────────────
-  //
 
+  //
   // ──────────────────────────────────────────────────── I ──────────
   //   :::::: R E N D E R : :  :   :    :     :        :          :
   // ──────────────────────────────────────────────────────────────
   //
-
   return (
     <>
-    <section className="bg-[#F9FAFA]">
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <Section7 />
-      <Section8 />
-      <Section9 />
+      <section className="mx-auto mt-[104px] xl:mt-[136px] flex justify-center h-4 xl:h-[51px] w-[90%] xl:w-[735px]">
+        
+        <Step
+          title="نوع خودرو"
+          display="block"
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+          index={1}
+        />
+        <Step title="خدمات" display="block"   index={2}  activeTab={activeTab}
+          setActiveTab={setActiveTab}/>
+        <Step title="تاریخ و ساعت" display="block"  index={3}  activeTab={activeTab}
+          setActiveTab={setActiveTab}/>
+        <Step title="آدرس" display="block"  index={4}  activeTab={activeTab}
+          setActiveTab={setActiveTab}/>
+        <Step title="مشخصات" display="block"  index={5}  activeTab={activeTab}
+          setActiveTab={setActiveTab}/>
+        <Step title="خدمات تکمیلی" display="block"  index={6}  activeTab={activeTab}
+          setActiveTab={setActiveTab}/>
+        <Step title="جزئیات و پرداخت" display="hidden"  index={7}  activeTab={activeTab}
+          setActiveTab={setActiveTab}/>
       </section>
     </>
   );
