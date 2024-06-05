@@ -20,7 +20,7 @@ export default function Index({
   placeHolder,
   sameOption,
   search,
-  defaultValue,
+  defaultValue
 }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
   /* const options = [

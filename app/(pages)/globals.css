@@ -213,3 +213,7 @@
 body{
   background-color: #F9FAFA;
 }
+.leaflet-container{
+  width: 588px;
+  height: 305px;
+}
