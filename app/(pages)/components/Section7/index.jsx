@@ -37,7 +37,7 @@ export default function Index() {
             </section>
           </section>
         </header>
-        <section className="mt-6 absolute bg-white dark:xl:bg-black dark:xl:text-white z-10 grid h-[278px] rounded-[15px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[486px] w-[90%] mx-auto justify-items-center gap-4 xl:bg-[url('/images/BG.png')] bg-cover py-6 xl:py-[80px] xl:dark:bg-[url('/images/BGD.png')]">
+        <section className="mt-6 absolute bg-white dark:xl:bg-black dark:xl:text-white z-10 grid h-[278px] rounded-[15px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] xl:h-[486px] w-[90%] mx-auto justify-items-center xl:w-full gap-4 xl:bg-[url('/images/BG.png')] bg-cover py-6 xl:py-[80px] xl:dark:bg-[url('/images/BGD.png')]">
           <Image
             src="/images/icons/Vector.svg"
             width={18}
