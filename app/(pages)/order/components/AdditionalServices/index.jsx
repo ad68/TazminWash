@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 
 import CheckedBox from "./CheckedBox";
-import { IconCarTitle } from "@/common/icons";
+import { IconCarTitle, IconVectoservice } from "@/common/icons";
 import Image from "next/image";
 import {
   consoleLog_BlackGreen,
@@ -43,16 +43,10 @@ export default function Index({ setActiveTab }) {
     <>
       <section className="mx-auto mt-8 xl:mt-[48px] h-auto xl:h-[543px] w-[90%] xl:w-[636px]">
       
-        <section className="xl:h-[411px] h-auto w-full rounded-[15px] bg-white py-[24px] shadow-[0px_0px_8px_0px_#AFAFAF14]">
-          <span className="flex  items-center text-base font-medium xl:text-[20px] text-black xl:text-[#222222]">
-            <section className="h-[35px] w-[2px] rounded-bl-[10px] rounded-tl-[10px] bg-[#700B97]"></section>
-            <Image
-              alt=""
-              width={19.56}
-              height={19.56}
-              src="/images/icons/Vectoservice+.svg"
-              className="z-10 mr-[28px]"
-            />
+        <section className="xl:h-[411px] h-auto w-full rounded-[15px] dark:border-[1px] dark:border-[#ffffff46] dark:text-white dark:bg-searchBox-gradient  dark:bg-opacity-90 dark:backdrop-blur-lg bg-white py-[24px] shadow-[0px_0px_8px_0px_#AFAFAF14]">
+          <span className="flex  items-center text-base font-medium xl:text-[20px] dark:text-white text-black xl:text-[#222222]">
+            <section className="h-[35px] w-[2px] rounded-bl-[10px] rounded-tl-[10px] dark:bg-[#a590ad] bg-[#700B97]"></section>
+            <IconVectoservice width='19.56'  viewBox="0 0 18 18" height='19.56' className="z-10 mr-[28px]"/>
             <span className="mr-2 leading-[34.55px]">خدمات تکمیلی</span>
           </span>
           <section className="mt-6 flex flex-col gap-4  px-6">
@@ -123,7 +117,7 @@ export default function Index({ setActiveTab }) {
             onClick={() => {
               setActiveTab(5);
             }}
-            className="flex h-[40px] xl:h-[48px] w-full xl:w-[196px] items-center justify-center rounded-lg border border-solid border-[#700B97] text-[#700B97]"
+            className="flex h-[40px] xl:h-[48px] w-full xl:w-[196px] items-center justify-center rounded-lg border border-solid dark:border-[#a590ad] border-[#700B97] dark:text-[#a590ad] text-[#700B97]"
           >
           مرحله قبل
           </button>

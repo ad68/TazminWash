@@ -31,7 +31,7 @@ export default function Index({title,display,activeTab,index,bg1,bg2,textColor})
           </section>
           <section className={`${display} xl:h-[4px] h-[2px] w-[36px] xl:w-[88px]  ${activeTab===index?"bg-[#DBC2E5]":activeTab>index?"bg-[#700B97]":'bg-[#D9D9D9]'}`}></section>
         </section>
-        <span className={`${activeTab>=index?"text-[#700B97]":"text-[#D9D9D9]"} w-full xl:block hidden text-[11px] leading-[19px]`}>{title}</span>
+        <span className={`${activeTab>=index?"dark:text-white text-[#700B97]":"dark:text-[#a590ad] text-[#D9D9D9]"} w-full xl:block hidden text-[11px] leading-[19px]`}>{title}</span>
       </section>
     </>
   );

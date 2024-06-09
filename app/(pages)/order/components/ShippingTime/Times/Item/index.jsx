@@ -28,11 +28,11 @@ export default function Index({ selectTime, setSelectTime,value,time }) {
         onClick={() => {
           setSelectTime(value);
         }}
-        className={` flex xl:h-[40px] h-auto py-2 xl:py-0 cursor-pointer w-full xl:w-[80px] items-center justify-center gap-2 rounded-lg  border border-solid  ${selectTime === value ? "border-[#700B97]"   : "border-[#EBEBEB]"}`}
+        className={` flex xl:h-[40px] h-auto py-2 xl:py-0 cursor-pointer w-full xl:w-[80px] items-center justify-center gap-2 rounded-lg  border border-solid  ${selectTime === value ? "dark:border-white border-[#700B97]"   : "dark:border-[#ffffff46] border-[#EBEBEB]"}`}
       >
        
         <section
-          className={`${selectTime === value ? "text-[#700B97]" : "text-[#6B6B6B]"}`}
+          className={`${selectTime === value ? "dark:text-white text-[#700B97]" : "dark:text-[#a590ad] text-[#6B6B6B]"}`}
         >
          
           {time}

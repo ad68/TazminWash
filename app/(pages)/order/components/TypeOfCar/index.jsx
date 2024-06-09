@@ -25,9 +25,9 @@ export default function Index({ setActiveTab }) {
   return (
     <>
       <section className=" mt-8 xl:mt-[48px] xl:h-[543px] mx-auto h-auto w-[90%] xl:w-[636px]">
-        <section className="h-[471px] w-full rounded-[15px] bg-white py-[24px] shadow-[0px_0px_8px_0px_#AFAFAF14]">
-          <span className="flex  items-center text-base font-medium xl:text-[20px] text-black xl:text-[#222222]">
-            <section className="h-[35px] w-[2px] rounded-bl-[10px] rounded-tl-[10px] bg-[#700B97]"></section>
+        <section className="h-[471px]  dark:border-[1px] dark:border-[#ffffff46] dark:text-white dark:bg-searchBox-gradient  dark:bg-opacity-90 dark:backdrop-blur-lg w-full rounded-[15px] bg-white py-[24px] shadow-[0px_0px_8px_0px_#AFAFAF14]">
+          <span className="flex  items-center text-base font-medium xl:text-[20px] dark:text-white text-black xl:text-[#222222]">
+            <section className="h-[35px] w-[2px] rounded-bl-[10px] rounded-tl-[10px] dark:bg-[#a590ad] bg-[#700B97]"></section>
             <IconCarTitle
               width="28"
               height="28"
@@ -97,7 +97,7 @@ export default function Index({ setActiveTab }) {
               className="z-10 mr-[10.3px]"
             />
           </button>
-          <button className="flex h-[40px] xl:h-[48px] w-full xl:w-[196px] items-center justify-center rounded-lg border border-solid border-[#700B97] text-[#700B97]">
+          <button className=" flex h-[40px] xl:h-[48px] w-full xl:w-[196px] items-center justify-center rounded-lg border border-solid dark:border-[#a590ad] border-[#700B97] dark:text-[#a590ad] text-[#700B97]">
             بازگشت
           </button>
         </section>

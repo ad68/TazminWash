@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
       dir="rtl"
       className={`${yekanbakh.variable} font-yekanbakh dark:bg-black`}
     >
-      <body>
+      <body className="dark:bg-black bg-[#F9FAFA] ">
         {/*  <ScrollTop /> */}
         <TopLoader />
         <Header />

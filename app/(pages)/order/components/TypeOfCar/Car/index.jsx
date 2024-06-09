@@ -28,15 +28,15 @@ export default function Index({ img, title, value, carType, setCarType }) {
         onClick={() => {
           setCarType(value);
         }}
-        className={` flex h-[46px] cursor-pointer w-full items-center gap-4 rounded-lg  border border-solid pr-4 ${carType ===value ? "border-[#700B97]"   : "border-[#EBEBEB]"}`}
+        className={` flex h-[46px] cursor-pointer  w-full items-center gap-4 rounded-lg  border border-solid pr-4 ${carType ===value ? "dark:border-[#c4b6ca] border-[#700B97]"   : "dark:border-[#ffffff46] border-[#EBEBEB]"}`}
       >
-        <span className={`h-4 w-4 flex justify-center items-center rounded-full bg-[#D9D9D9]`}>
+        <span className={`h-4 w-4 flex justify-center items-center rounded-full dark:bg-[#a590ad] bg-[#D9D9D9]`}>
           <section
-            className={`h-2 w-2 rounded-full  ${carType ===value ? "bg-[#700B97]" : "bg-[#D9D9D9]"}`}
+            className={`h-2 w-2 rounded-full  ${carType ===value ? "  bg-[#700B97]" : "dark:bg-[#a590ad] bg-[#D9D9D9]"}`}
           ></section>
         </span>
         <section
-          className={`flex gap-1 ${carType ===value ? "text-[#700B97]" : "text-[#222222]"}`}
+          className={`flex gap-1 ${carType ===value ? " dark:text-white text-[#700B97]" : "dark:text-[#c4b6ca] text-[#222222]"}`}
         >
           <Image alt="" src={img} width="41" height="21" />
           {title}

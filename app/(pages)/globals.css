@@ -213,7 +213,18 @@
 body{
   background-color: #F9FAFA;
 }
-.leaflet-container{
-  width: 588px;
-  height: 305px;
+@media (min-width:765px) {
+  .leaflet-container{
+    width: 588px;
+    height: 305px;
+    border-radius: 8px;
+    margin: auto;
+  }
+}
+@media (max-width:765px) {
+  .leaflet-container{
+    width: 100%;
+    height: 208px;
+    border-radius: 10px;
+  }
 }

@@ -21,7 +21,7 @@ export default function Index({
         onChange={onChange}
         value={value}
         style={{ ...style }}
-        className={`${dark ? "border-[#2f2f2f80] bg-[#2f2f2f80] text-white" : ""} mx-0 h-[40px] w-full rounded-[4px] border-[2px] p-[15px] text-xs outline-none transition-all duration-300 focus:border-[#0165e1] ${className}`}
+        className={`${dark ? "border-[#ffffff46] bg-[#2f2f2f80] text-white" : "border-[#EBEBEB]"} mx-0 h-[40px] w-full rounded-[4px] border-[1px] p-[15px] text-xs outline-none transition-all duration-300 focus:border-[#0165e1] ${className}`}
       />
     </section>
   );
