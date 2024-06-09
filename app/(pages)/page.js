@@ -32,6 +32,7 @@ export default function page() {
 
   return (
     <>
+    <section className="">
       <Section1 />
       <Section2 />
       <Section3 />
@@ -41,6 +42,7 @@ export default function page() {
       <Section7 />
       <Section8 />
       <Section9 />
+      </section>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import "./globals.css";
 import localFont from "next/font/local";
-import { Header } from "./components/Header";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import TopLoader from "../common/TopLoader";
 import { Toaster } from "react-hot-toast";
@@ -74,7 +74,7 @@ export default function RootLayout({ children }) {
       dir="rtl"
       className={`${yekanbakh.variable} font-yekanbakh dark:bg-black`}
     >
-      <body>
+      <body className="dark:bg-black bg-[#F9FAFA] ">
         {/*  <ScrollTop /> */}
         <TopLoader />
         <Header />

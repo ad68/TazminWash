@@ -44,8 +44,8 @@ export default function Index({ theme, setTheme, goToLightMode, goToDarkMode }) 
                 <IconDarkModeCircle width='32.24' height='31.33' fill='#700B97'  color='#700B97' viewBox="0 0 37 37"   className='block dark:hidden'/>
             </span>
             <span className={`absolute top-[6px] left-2 transition-all`}>
-                <IconMoon width='19.82' height='14.97' fill='white' color='white' viewBox="0 0 30 30"  className='dark:block hidden'/>
-                <IconMoon width='19.82' height='14.97' fill='#700B97' color='#700B97' viewBox="0 0 30 30"    className='block dark:hidden'/>
+                <IconMoon width='19.82' height='14.97' fill='white' color='white' viewBox="0 2 30 30"  className='dark:block hidden'/>
+                <IconMoon width='19.82' height='14.97' fill='#700B97' color='#700B97' viewBox="0 2 30 30"    className='block dark:hidden'/>
         
             </span>
         </section>

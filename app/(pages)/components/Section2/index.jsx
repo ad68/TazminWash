@@ -23,8 +23,8 @@ export default function Index() {
   //
   return (
     <>
-      <section className="w-full mt-[40px] xl:mt-[120px]">
-        <section className=" mx-auto  grid justify-items-center gap-6 xl:mt-[120px] xl:h-[382.29px] xl:w-[1296.5px] ">
+      <section className="w-full">
+        <section className=" mx-auto  grid justify-items-center mt-[40px] gap-6 xl:mt-[240px] xl:h-[382.29px] xl:w-[1296.5px] ">
           <header className="flex items-center gap-4 ">
             {/*             <Image
               src="/images/icons/Frame 1261154674.svg"

@@ -25,7 +25,7 @@ export default function Index() {
   //
   return (
     <>
-      <section className="mt-[40px] grid gap-6 xl:my-[120px]">
+      <section className="mt-[40px] dark:bg-black  grid gap-6 xl:my-[120px]">
         <header className="flex justify-center items-center gap-4 mx-auto">
           <section className="flex h-4 w-4 items-center justify-center rounded-full border-[1px] border-[#6f0b9759] dark:border-[#ffffff7a]">
             <section className="flex h-3 w-3 items-center justify-center rounded-full border-[1px] border-[#6f0b97ac] dark:border-[#ffffffbf]">

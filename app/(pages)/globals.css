@@ -56,7 +56,7 @@
   .bg-searchBox-gradient {
     background: linear-gradient(
       216.6deg,
-      rgba(111, 11, 151, 0.212) 20.69%,
+      rgba(111, 11, 151, 0.212) 40.69%,
       rgba(255, 255, 255, 0.07) 100%
     );
   }
@@ -208,5 +208,23 @@
     background: -ms-linear-gradient(-45deg, rgba(111, 11, 151, 0.425) 0%, rgba(0,0,0,0.07) 98%, rgba(235,233,249,0.05) 100%);
     background: linear-gradient(135deg, rgba(111, 11, 151, 0.411) 0%, rgba(0,0,0,0.07) 98%, rgba(235,233,249,0.05) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#700b97', endColorstr='#ebe9f9', GradientType=1 );
+  }
+}
+body{
+  background-color: #F9FAFA;
+}
+@media (min-width:765px) {
+  .leaflet-container{
+    width: 588px;
+    height: 305px;
+    border-radius: 8px;
+    margin: auto;
+  }
+}
+@media (max-width:765px) {
+  .leaflet-container{
+    width: 100%;
+    height: 208px;
+    border-radius: 10px;
   }
 }
