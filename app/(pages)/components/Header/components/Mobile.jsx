@@ -24,7 +24,7 @@ export default function Index() {
   //
   return (
     <>
-      <section className="fixed left-0 top-0 z-10 flex h-[64px] w-full items-center bg-white  xl:hidden dark:bg-black ">
+      <section className="fixed left-0 top-0 z-20 flex h-[64px] w-full items-center bg-white  xl:hidden dark:bg-black ">
         <section className="mx-auto  flex w-[90%] items-center justify-between font-medium text-[#0C0C0C] dark:text-white ">
           <section className="w-full">
             <IconMenu
