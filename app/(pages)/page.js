@@ -32,7 +32,7 @@ export default function page() {
 
   return (
     <>
-    <section className="bg-[#F9FAFA]">
+    <section className="">
       <Section1 />
       <Section2 />
       <Section3 />

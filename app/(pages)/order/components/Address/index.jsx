@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import StepsBox from "../StepsBox";
 import ItemsList from "./ItemsList";
 import Map from "./Map";
-import { IconCarTitle } from "@/common/icons";
+import { IconCarTitle, IconLocation, IconVectorAdd } from "@/common/icons";
 import Image from "next/image";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -29,16 +29,10 @@ export default function Index({ setActiveTab }) {
       {
             map? <Map setActiveTab={setActiveTab}/> :
             <section className="mx-auto mt-8 xl:mt-[48px] h-auto xl:h-[408px] w-[90%] xl:w-[636px]">
-            <section className="xl:h-[336px] h-auto w-full rounded-[15px] bg-white py-[24px] shadow-[0px_0px_8px_0px_#AFAFAF14]">
-              <span className="flex  items-center text-base font-medium xl:text-[20px] text-black xl:text-[#222222]">
-                <section className="h-[35px] w-[2px] rounded-bl-[10px] rounded-tl-[10px] bg-[#700B97]"></section>
-                <Image
-                  alt=""
-                  width={14}
-                  height={17.75}
-                  src="/images/icons/location.svg"
-                  className="z-10 mr-[28px]"
-                />
+            <section className="xl:h-[336px] h-auto w-full rounded-[15px] dark:border-[1px] dark:border-[#ffffff46] dark:text-white dark:bg-searchBox-gradient  dark:bg-opacity-90 dark:backdrop-blur-lg bg-white py-[24px] shadow-[0px_0px_8px_0px_#AFAFAF14]">
+              <span className="flex  items-center text-base font-medium xl:text-[20px] dark:text-white text-black xl:text-[#222222]">
+                <section className="h-[35px] w-[2px] rounded-bl-[10px] rounded-tl-[10px] dark:bg-[#a590ad] bg-[#700B97]"></section>
+                <IconLocation viewBox="0 0 24 25" fill='white'  className="z-10 mr-[28px]"/>
                 <span className="mr-2 leading-[34.55px]">انتخاب آدرس</span>
               </span>
               <section className="mt-6 flex flex-col gap-2 w-[85%] mx-auto  xl:px-6">
@@ -58,14 +52,8 @@ export default function Index({ setActiveTab }) {
                 />
                 <button onClick={()=>{
                   setMap(true)
-                }} className="text-[#700B97] xl:text-base text-sm flex items-center justify-center gap-[10px] mt-[25px] rounded-lg h-[48px] border border-solid border-[#700B97]">
-                <Image
-                  alt=""
-                  width={14}
-                  height={17.75}
-                  src="/images/icons/Vectoradd.png"
-                  className="z-10 "
-                />
+                }} className="dark:text-[#a590ad] text-[#700B97] xl:text-base text-sm flex items-center justify-center gap-[10px] mt-[25px] rounded-lg h-[48px] border border-solid dark:border-[#a590ad] border-[#700B97]">
+               <IconVectorAdd viewBox="0 0 14 14" width='16' height='16'/>
                 افزودن آدرس جدید
                 </button>
               </section>
@@ -89,7 +77,7 @@ export default function Index({ setActiveTab }) {
               <button  onClick={() => {
                   setActiveTab(3);
                 }}
-                className="flex h-[40px] xl:h-[48px] w-full xl:w-[196px] items-center justify-center rounded-lg text-[#700B97] border border-solid border-[#700B97]"
+                className="flex h-[40px] xl:h-[48px] w-full xl:w-[196px] items-center justify-center rounded-lg dark:text-[#a590ad] text-[#700B97] border border-solid dark:border-[#a590ad] border-[#700B97]"
               >
               مرحله قبل
             

@@ -45,11 +45,11 @@ if(checkedBox){
           setCheckedBox(!checkedBox)
           
         }}
-        className={` flex h-[46px] w-full cursor-pointer items-center justify-between  rounded-lg  border border-solid px-4 ${ serviceType.includes(value) ? "border-[#700B97]" : "border-[#EBEBEB]"}`}
+        className={` flex h-[46px] w-full cursor-pointer items-center justify-between  rounded-lg  border border-solid px-4 ${ serviceType.includes(value) ? "dark:border-white border-[#700B97]" : "dark:border-[#ffffff46] border-[#EBEBEB]"}`}
       >
         <section className="flex items-center gap-4">
           <span
-            className={`flex h-[13.33PX] w-[13.33PX] items-center justify-center rounded-[3.33px]  ${serviceType.includes(value) ? "bg-[#700B97]" : "bg-[#F1E7F5]"} `}
+            className={`flex h-[13.33PX] w-[13.33PX] items-center justify-center rounded-[3.33px]  ${serviceType.includes(value) ? "bg-[#700B97]" : "dark:bg-[#a590ad] bg-[#F1E7F5]"} `}
           >
             {serviceType.includes(value) ? (
               <Image
@@ -64,14 +64,14 @@ if(checkedBox){
             )}
           </span>
           <section
-            className={`xl:text-base text-sm flex gap-1 ${serviceType.includes(value) ? "text-[#700B97]" : "text-[#222222]"}`}
+            className={`xl:text-base text-sm flex gap-1 ${serviceType.includes(value) ? "dark:text-white text-[#700B97]" : "dark:text-[#a590ad] text-[#222222]"}`}
           >
             {title}
           </section>
         </section>
 
         <span
-          className={` xl:text-base text-xs justify-self-end ${serviceType.includes(value)? "text-[#700B97]" : "text-[#222222]"}`}
+          className={` xl:text-base text-xs justify-self-end ${serviceType.includes(value)? "dark:text-white text-[#700B97]" : "dark:text-[#a590ad] text-[#222222]"}`}
         >
           {price}
         </span>

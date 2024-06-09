@@ -1,7 +1,8 @@
 "use client";
 import React, { useState } from "react";
-
+import { Select, TextBox } from "@/common";
 import Image from "next/image";
+import { IconVectorPerson } from "@/common/icons";
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
@@ -22,37 +23,44 @@ export default function Index({ setActiveTab }) {
   //
   return (
     <>
-      <section className="mx-auto mt-8 xl:mt-[48px] h-auto xl:h-[317px] w-[90%] xl:w-[636px]">
-        <section className="xl:h-[245px] h-auto w-full rounded-[15px] bg-white py-[24px] shadow-[0px_0px_8px_0px_#AFAFAF14]">
-          <span className="flex  items-center text-base font-medium xl:text-[20px] text-black xl:text-[#222222]">
-            <section className="h-[35px] w-[2px] rounded-bl-[10px] rounded-tl-[10px] bg-[#700B97]"></section>
-            <Image
-              alt=""
-              width={16}
-              height={18}
-              src="/images/icons/Vectorperson.svg"
-              className="z-10 mr-[28px]"
-            />
+      <section className="mx-auto mt-8 h-auto w-[90%] xl:mt-[48px] xl:h-[317px] xl:w-[636px]">
+        <section className="dark:bg-searchBox-gradient h-auto w-full rounded-[15px] bg-white py-[24px] shadow-[0px_0px_8px_0px_#AFAFAF14] xl:h-[245px]  dark:border-[1px] dark:border-[#ffffff46] dark:bg-opacity-90 dark:text-white dark:backdrop-blur-lg">
+          <span className="flex  items-center text-base font-medium text-black xl:text-[20px] xl:text-[#222222] dark:text-white">
+            <section className="h-[35px] w-[2px] rounded-bl-[10px] rounded-tl-[10px] bg-[#700B97] dark:bg-[#a590ad]"></section>
+            <IconVectorPerson viewBox="0 0 18 20" width='16' height='18'   className="z-10 mr-[28px]" />
             <span className="mr-2 leading-[34.55px]">مشخصات فردی</span>
           </span>
           <form>
-          <section className="w-full mt-8 px-6 h-[48px]  relative ">
-          <label className="text-[#666666] px-[6px] leading-[27.64px] bg-white absolute top-[-15px] right-[40px] ">نام</label>
-          <input type="text" className="w-full h-full border px-4  rounded-lg  border-solid border-[#EBEBEB]"/>
-        </section>
-        <section className="w-full mt-8 px-6 h-[48px]  relative ">
-          <label className="text-[#666666] px-[6px] leading-[27.64px] bg-white absolute top-[-15px] right-[40px] ">نام خانوادگی</label>
-          <input type="text" className="w-full h-full border  rounded-lg px-4  border-solid border-[#EBEBEB]"/>
-        </section>
+            <section className="relative mt-8 h-[48px] w-full  px-6 ">
+              <label className="absolute right-[40px] top-[-15px] z-10 bg-white px-[6px] text-[#666666] dark:bg-transparent dark:text-white">
+                نام
+              </label>
+              <section className="hidden w-full dark:block">
+                <TextBox dark className="w-full " />
+              </section>
+              <section className="block w-full dark:hidden">
+                <TextBox className="w-full " />
+              </section>
+            </section>
+            <section className="relative mt-8 h-[48px] w-full  px-6 ">
+              <label className="absolute right-[40px] top-[-15px] z-10 bg-white px-[6px] text-[#666666] dark:bg-transparent dark:text-white">
+                نام خانوادگی
+              </label>
+              <section className="hidden w-full dark:block">
+                <TextBox dark className="w-full " />
+              </section>
+              <section className="block w-full dark:hidden">
+                <TextBox className="w-full " />
+              </section>
+            </section>
           </form>
-      
         </section>
-        <section className="flex mt-6 gap-4 xl:gap-0 text-base xl:text-[18px] font-medium leading-[34.55px] justify-between w-full">
+        <section className="mt-6 flex w-full justify-between gap-4 text-base font-medium leading-[34.55px] xl:gap-0 xl:text-[18px]">
           <button
             onClick={() => {
               setActiveTab(6);
             }}
-            className="flex h-[40px] xl:h-[48px] w-full xl:w-[416px] items-center justify-center rounded-lg bg-[#700B97] text-white"
+            className="flex h-[40px] w-full items-center justify-center rounded-lg bg-[#700B97] text-white xl:h-[48px] xl:w-[416px]"
           >
             ادامه
             <Image
@@ -63,13 +71,13 @@ export default function Index({ setActiveTab }) {
               className="z-10 mr-[10.3px]"
             />
           </button>
-          <button  onClick={() => {
+          <button
+            onClick={() => {
               setActiveTab(4);
             }}
-            className="flex h-auto xl:h-[48px] w-full xl:w-[196px] items-center justify-center rounded-lg text-[#700B97] border border-solid border-[#700B97]"
+            className="flex h-auto w-full items-center justify-center rounded-lg border border-solid dark:border-[#a590ad] border-[#700B97] dark:text-[#a590ad] text-[#700B97] xl:h-[48px] xl:w-[196px]"
           >
-          مرحله قبل
-        
+            مرحله قبل
           </button>
         </section>
       </section>

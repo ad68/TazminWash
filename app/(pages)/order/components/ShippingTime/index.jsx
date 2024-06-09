@@ -5,6 +5,8 @@ import DateList from "./DateList";
 import Times from "./Times";
 
 import Image from "next/image";
+import { IconCalenderlock } from "@/common/icons";
+
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
 // ────────────────────────────────────────────────────────────────────
@@ -30,17 +32,12 @@ export default function Index({ setActiveTab }) {
   return (
     <>
       <section className="mx-auto mt-8 xl:mt-[48px] h-auto xl:h-[611px] w-[90%]  xl:w-[636px]">
-        <section className="xl:h-[539px] h-auto w-full rounded-[15px] bg-white py-[24px] shadow-[0px_0px_8px_0px_#AFAFAF14]">
+        <section className="xl:h-[539px] h-auto w-full rounded-[15px] dark:border-[1px] dark:border-[#ffffff46] dark:text-white dark:bg-searchBox-gradient  dark:bg-opacity-90 dark:backdrop-blur-lg bg-white py-[24px] shadow-[0px_0px_8px_0px_#AFAFAF14]">
         
-          <span className="flex  items-center text-base font-medium xl:text-[20px] text-black xl:text-[#222222]">
-            <section className="h-[35px] w-[2px] rounded-bl-[10px] rounded-tl-[10px] bg-[#700B97]"></section>
-            <Image
-              alt=""
-              width={24}
-              height={24}
-              src="/images/icons/Calender&oclock.svg"
-              className="z-10 mr-[28px]"
-            />
+          <span className="flex  items-center text-base font-medium xl:text-[20px] dark:text-white text-black xl:text-[#222222]">
+            <section className="h-[35px] w-[2px] rounded-bl-[10px] rounded-tl-[10px] dark:bg-[#a590ad] bg-[#700B97]"></section>
+        <IconCalenderlock  className="z-10 mr-[28px]" viewBox="0 0 24 25"/>
+          
             <span className="mr-2 leading-[34.55px]"> تاریخ و ساعت</span>
           </span>
           <section>
@@ -67,7 +64,7 @@ export default function Index({ setActiveTab }) {
           </button>
           <button     onClick={() => {
               setActiveTab(2);
-            }} className="flex h-[40px] xl:h-[48px] w-full xl:w-[196px] items-center justify-center rounded-lg border border-solid border-[#700B97] text-[#700B97]">
+            }} className="flex h-[40px] xl:h-[48px] w-full xl:w-[196px] items-center justify-center rounded-lg border border-solid dark:border-[#a590ad] dark:text-[#a590ad] border-[#700B97] text-[#700B97]">
                       مرحله قبل
           </button>
         </section>

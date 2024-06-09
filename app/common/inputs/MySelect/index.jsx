@@ -78,7 +78,7 @@ export default function Index({
       styles={{
         control: (baseStyles, state) => ({
           ...baseStyles,
-          borderColor: state.isFocused ? "black" : "silver",
+          borderColor: dark ? "#ffffff46" : "#EBEBEB",
           backgroundColor: dark ? "#2f2f2f80" : "white",
           width: "100% !important",
         }),

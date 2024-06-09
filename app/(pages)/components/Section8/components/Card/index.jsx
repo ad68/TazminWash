@@ -6,7 +6,7 @@ import Image from "next/image";
 // ────────────────────────────────────────────────────────────────────
 //
 
-export default function Index({ image, title, text, date }) {
+export default function Index({ image, title, text, date,display }) {
   // ─── Global Variable ────────────────────────────────────────────────────────────
 
   // ─── States ─────────────────────────────────────────────────────────────────────
@@ -22,13 +22,13 @@ export default function Index({ image, title, text, date }) {
   //
   return (
     <>
-      <section className="grid h-[295px] w-[188px]  rounded-[10px] shadow-md xl:h-[441px] xl:w-[306px] xl:gap-4 gap-1 dark:bg-white/10 dark:backdrop-blur-sm dark:border-[1px] dark:border-[#ffffff46] dark:text-white dark:gradient">
+      <section className={`grid h-auto w-[70%]  rounded-[10px] shadow-md xl:h-[441px] ${display} xl:w-[306px] xl:gap-4 gap-1 dark:bg-white/10 dark:backdrop-blur-sm dark:border-[1px] dark:border-[#ffffff46] dark:text-white dark:gradient`}>
         <Image
           src={image}
           width={306}
           height={200}
           alt=""
-          className="h-[99px] w-[188px] rounded-t-[10px] xl:h-[200px] xl:w-[306px]"
+          className="h-auto w-full rounded-t-[10px] xl:h-[200px] xl:w-[306px]"
         />
         <section className="grid px-4 pb-4 xl:gap-4 gap-2">
           <h1 className="text-[12px] font-bold leading-[20.73px] xl:text-[16px] xl:font-normal xl:leading-[27.64px]">
