@@ -29,6 +29,7 @@ export { default as IconTelegram } from './src/telegram.jsx';
 export { default as IconVectorBg } from './src/Vector-bg.jsx';
 export { default as IconVectorAdd } from './src/VectorAdd.jsx';
 export { default as IconVectorPerson } from './src/VectorPerson.jsx';
+export { default as IconVectorStep } from './src/VectorStep.jsx';
 export { default as IconVectoservice } from './src/Vectoservice.jsx';
 export { default as IconWhatsapp } from './src/whatsapp.jsx';
 export { default as IconWidget } from './src/Widget.jsx';
