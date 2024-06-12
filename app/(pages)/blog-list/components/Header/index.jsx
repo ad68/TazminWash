@@ -39,7 +39,7 @@ export default function Index() {
           <input
             placeholder="جستجو"
             type="text"
-            className="h-full w-full text-xs xl:text-base rounded-lg dark:bg-slider-gradient  bg-[#EDEDED] px-[40px] dark:placeholder-white placeholder-[#666666]"
+            className="h-full w-full text-xs xl:text-base rounded-lg dark:bg-searchBox-gradient  dark:bg-opacity-90 dark:backdrop-blur-lg bg-[#EDEDED] px-[40px] dark:placeholder-white placeholder-[#666666]"
           />
           <IconRoundedMagnifer
             viewBox="0 0 24 24"

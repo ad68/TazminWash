@@ -22,7 +22,7 @@ export default function Index({ image, title, text, date }) {
   //
   return (
     <>
-      <section className="flex xl:flex-col xl:h-[441px] overflow-hidden py-[14px] xl:py-0 xl:w-[306px]  rounded-[10px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] w-full xl:gap-4 gap-1  dark:bg-white/5 dark:backdrop-blur-sm dark:bg-slider-gradient  dark:border-[1px]  dark:border-[#ffffff46] dark:text-white dark:dark:bg-slider-gradient">
+      <section className="flex xl:flex-col xl:h-[441px] overflow-hidden py-[14px] xl:py-0 xl:w-[306px]  rounded-[10px] shadow-[0px_4px_8px_0px_#0000000F,0px_0px_4px_0px_#0000000A] w-full xl:gap-4 gap-1  dark:bg-searchBox-gradient  dark:bg-opacity-90 dark:backdrop-blur-lg  dark:border-[1px]  dark:border-[#ffffff46] dark:text-white dark:dark:bg-slider-gradient">
         <Image
           src={image}
           width={306}
