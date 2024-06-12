@@ -5,9 +5,7 @@ import Image from "next/image";
 import Delete from "./icon/delete.svg";
 import { useAxiosWithToken } from "@/hooks";
 import "./style.css";
-import { message } from "antd";
-import toast from "react-hot-toast";
-import { showNotify } from "@/helper";
+import { notify } from "@/helper";
 //
 // ────────────────────────────────────────────────────────── I ──────────
 //   :::::: C O M P O N E N T : :  :   :    :     :        :          :
@@ -62,14 +60,14 @@ export default function Index({
       .then((res) => {
         setLoading(false);
         /* message.success("عملیات با موفقیت انجام شد"); */
-        showNotify("عملیات با موفقیت انجام شد", "success");
+        notify.Success("عملیات با موفقیت انجام شد");
         if (onSuccess) {
           onSuccess();
         }
         onClose();
       })
       .catch((err) => {
-        showNotify("خطایی رخ داده است", "error");
+        notify.Error("خطایی رخ داده است");
         setLoading(false);
         onClose();
       });

@@ -50,7 +50,7 @@ export default function Index() {
             />
           </section>
           <span className="xl:pl-0 pl-[60%]">ماشین</span>
-          
+
           <Image
             width={15.5}
             height={7.5}
@@ -60,7 +60,7 @@ export default function Index() {
           />
         </section>
         <section className=" xl:mr-8 px-6 xl:px-0 text-xs xl:text-base flex h-auto w-full xl:h-[55px] xl:w-[199.64px] items-center justify-between xl:justify-center rounded-[10px] border border-solid border-[#EBEBEB] py-[10px]">
-  
+
           <section className="xl:ml-4">
             <IconCalender
               viewBox="0 0 22 22"
@@ -78,7 +78,7 @@ export default function Index() {
             />
           </section>
           <span className="xl:pl-0 pl-[35%]"> تاریخ</span>
-         
+
           <Image
             width={15.5}
             height={7.5}
@@ -105,7 +105,7 @@ export default function Index() {
             />
           </section>
           <span className="xl:pl-0 pl-[40%]">خدمات</span>
-     
+
           <Image
             width={15.5}
             height={7.5}
