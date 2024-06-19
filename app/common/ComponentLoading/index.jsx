@@ -21,7 +21,7 @@ export default function Index() {
   // ──────────────────────────────────────────────────────────────
   //
   return (
-    <section className="flex w-full items-center justify-center">
+    <section className="flex w-full absolute z-50 top-0 left-0 h-full items-center justify-center">
       <div className="lds-ellipsis">
         <div></div>
         <div></div>

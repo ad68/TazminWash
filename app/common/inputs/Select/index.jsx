@@ -65,7 +65,7 @@ export default function Index({
         loading={loading}
         style={{
           width: "100%",
-          height: 40,
+          height: 48,
         }}
         options={data}
         onSearch={onSearch}

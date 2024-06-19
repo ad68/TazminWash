@@ -75,13 +75,39 @@ export default function Index({
       isSearchable={search}
       loadingMessage={() => <span>در حال بارگزاری...</span>}
       noOptionsMessage={() => <span>اطلاعاتی موجود نیست</span>}
+      theme={(theme) => ({
+        ...theme,
+        borderRadius: 0,
+        colors: {
+        ...theme.colors,
+          primary25: '',
+          primary: '#700B97',
+          primary50:'#D3B3DF',
+        },
+      })}
       styles={{
         control: (baseStyles, state) => ({
           ...baseStyles,
-          borderColor: dark ? "#ffffff46" : "#EBEBEB",
+          borderColor: state.isFocused ? "#700B97" : "#EBEBEB",
           backgroundColor: dark ? "#2f2f2f80" : "white",
           width: "100% !important",
+          height:48,
+          color:'#666666',
+          borderRadius:10,
+          boxShadow: 'none',
+          '&:hover':{
+            boxShadow: 'none',
+          }
         }),
+        menu: base => ({
+          ...base,
+          // override border radius to match the box
+          borderRadius: 0,
+          // kill the gap
+          marginTop: 0,
+      
+        }),
+      
         /*   option: (provided) => ({
             ...provided,
             backgroundColor: dark ? "black" : "white",
@@ -89,7 +115,7 @@ export default function Index({
           }), */
         singleValue: (provided) => ({
           ...provided,
-          color: dark ? "white" : "black",
+          color: dark ? "white" : "#666666",
         }),
       }}
     />

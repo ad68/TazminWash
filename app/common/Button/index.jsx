@@ -39,10 +39,11 @@ export default function Index({
   return (
     <button
       {...rest}
-      className={`relative flex h-12 ${loading && "pl-10"} items-center justify-center rounded-md ${dark ? "border border-[gray]  bg-[#ffffff1a]" : getColor()} px-5 text-white   transition-all duration-700 disabled:opacity-30 ${className}`}
+      disabled={loading}
+      className={` flex h-12  items-center justify-center rounded-md ${dark ? "border border-[gray]  bg-[#ffffff1a]" : getColor()} px-5 text-white   transition-all duration-700 disabled:opacity-30 ${className}`}
     >
       {children}
-      <div className={`deleteLoader ${loading ? "opacity-1" : "opacity-0"}`}>
+      <div className={`btnLoader  ${loading ? "opacity-1" : "opacity-0"}`}>
         <div></div>
         <div></div>
         <div></div>

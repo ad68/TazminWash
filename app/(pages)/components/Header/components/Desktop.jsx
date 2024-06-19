@@ -26,7 +26,7 @@ const [scrollYPosition]=useScroll()
   //
   return <>
   <section className={`${scrollYPosition >=40?'dark:bg-black bg-[#F9FAFA]':'dark:bg-none bg-none'} transition-all fixed left-0 h-[70px] xl:flex items-center   top-0 z-20  hidden w-full `}>
-        <section className="mx-auto  flex h-[41px] w-[1295px] justify-between font-medium text-[#0C0C0C] dark:text-white ">
+        <section className="mx-auto  flex h-[41px] w-full px-[150px]  justify-between font-medium text-[#0C0C0C] dark:text-white ">
           <section className="flex w-[598px] items-center justify-between">
             <Image
               alt=""
@@ -42,11 +42,11 @@ const [scrollYPosition]=useScroll()
               src="/images/icons/logo-Dark.svg"
               className="hidden dark:block"
             />
-            <span>صفحه اصلی</span>
-            <span>درباره ما</span>
-            <span>محصولات</span>
-            <span>لیست قیمت ها</span>
-            <span>وبلاگ</span>
+            <span className="cursor-pointer hover:text-[#700B97] transition-all">صفحه اصلی</span>
+            <span className="cursor-pointer hover:text-[#700B97] transition-all">درباره ما</span>
+            <span className="cursor-pointer hover:text-[#700B97] transition-all">محصولات</span>
+            <span className="cursor-pointer hover:text-[#700B97] transition-all">لیست قیمت ها</span>
+            <span className="cursor-pointer hover:text-[#700B97] transition-all">وبلاگ</span>
           </section>
           <section className="flex w-[235px] items-center justify-between">
             <DarkMode />

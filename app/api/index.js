@@ -1,2 +1,5 @@
 const baseUrl = process.env.NEXT_PUBLIC_API_URL;
-export const api = {};
+export const api = {
+    ambassador:{
+        ambassadorAdd:baseUrl+'ambassador/add',    }
+};
